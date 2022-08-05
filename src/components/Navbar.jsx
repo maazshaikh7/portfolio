@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 
 function Navbar(props) {
-  const [navDisplay, setNavDisplay] = useState(true);
-  const toggleNav = () => {
-    navDisplay ? setNavDisplay(false) : setNavDisplay(true);
-    console.log(navDisplay);
-  };
-
+ 
   return (
     <>
       <nav
@@ -15,7 +10,7 @@ function Navbar(props) {
             ? "from-blue-500 to-cyan-100"
             : "from-blue-900 to-violet-900 "
         } min-h-screen overflow-hidden duration-700 ${
-          navDisplay ? "" : "-translate-x-full"
+          props.navDisplay ? "" : "-translate-x-full"
         }`}
       >
         <div className="container ml-6 mr-6">
@@ -91,9 +86,9 @@ function Navbar(props) {
       <div className="close absolute top-5 left-5 inline-flex cursor-pointer mb-16 font-bold z-10 ">
         {/* add class list bx-menu duration-300  */}
         <i
-          onClick={toggleNav}
+          onClick={props.toggleNav}
           className={`bx ${props.mode === 'dark' ? "text-white" : "" } text-4xl duration-700 ${
-            navDisplay ? "bx-x" : "bx-menu"
+            props.navDisplay ? "bx-x" : "bx-menu"
           }`}
         ></i>
       </div>
@@ -114,6 +109,14 @@ function Navbar(props) {
         alt= 'moon'
         className={`sun/moon hidden md:block w-40 absolute top-3 right-2 duration-1000 ${props.mode === 'light' ? "translate-x-40" : "" }`}
       />
+      <div
+        className={`resume absolute right-6 top-4 sm:hidden ${
+          props.mode === "dark" ? "text-white" : ""
+        }`}
+      >
+        <i className="bx text-5xl bxs-notepad"></i>
+        <p className="font-bold pl-3">CV</p>
+      </div>
     </>
   );
 }

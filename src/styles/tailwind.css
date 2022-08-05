@@ -10,6 +10,20 @@
 .bx{
     @apply text-3xl pr-2 translate-y-1
 }
-
+.cloud:after, .cloud:before{
+    @apply relative inline-block bg-inherit rounded-xl
+}
+.cloud:after{
+    width:100px;
+    height:100px;
+    top:-220px;
+    left:50px;
+}
+.cloud::before{
+    width:180px;
+    height:180px;
+    top: -70px;
+    left:130px;
+}
 @tailwind utilities;
 
