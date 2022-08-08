@@ -3,6 +3,7 @@ import React from "react";
 function Home(props) {
   return (
     <>
+    <div className="fill w-screen h-screen"></div>
       <main
         className={`absolute top-1/4 duration-[2500ms] right-[5%] -z-10 ${
           props.navDisplay === false
@@ -29,17 +30,12 @@ function Home(props) {
             <h1 className="text-7xl font-sans my-1 lg:m-0">Maaz Shaikh</h1>
             <h3 className="text-3xl my-1 lg:m-0">Frontend Developer | UI/UX Designer</h3>
           </div>
-          <div className="contact">
-            <button className="p-3 text-lg my-5 lg:my-2 rounded-full bg-cyan-200">
+          <span className="contact">
+            <button className="p-3 z-20 text-lg my-5 lg:my-2 rounded-full bg-cyan-200 ">
               Contact me
             </button>
-          </div>
-          {/* <div
-            className={`resume ${props.mode === "dark" ? "text-white" : ""}`}
-          >
-            <i className="bx text-5xl bxs-notepad"></i>
-            <p className="font-bold pl-3">CV</p>
-          </div> */}
+          </span>
+        
         </div>
       </main>
     </>
