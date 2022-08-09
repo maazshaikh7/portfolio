@@ -21,7 +21,7 @@ function App() {
   // console.log(offset); 
 
   // On hamburger menu toggle
-  const [navDisplay, setNavDisplay] = useState(true);
+  const [navDisplay, setNavDisplay] = useState(false);
   const toggleNav = () => {
     navDisplay ? setNavDisplay(false) : setNavDisplay(true);
   };

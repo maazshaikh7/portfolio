@@ -35,9 +35,24 @@ function Home(props) {
               Contact me
             </button>
           </span>
+          
         
         </div>
       </main>
+      <img
+        src="src\assets\sun.png"
+        alt="sun"
+        className={`sun/moon hidden md:block w-72 absolute top-3 right-2 duration-1000 ${
+          props.mode === "dark" ? "-translate-y-72" : ""
+        }`}
+      />
+      <img
+        src="src\assets\moon.png"
+        alt="moon"
+        className={`sun/moon hidden md:block w-40 absolute top-3 right-2 duration-1000 ${
+          props.mode === "light" ? "translate-x-40" : ""
+        }`}
+      />
     </>
   );
 }
