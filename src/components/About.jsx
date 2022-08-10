@@ -4,7 +4,7 @@ function About(props) {
   return (
     <>
       <div
-        className={`my-40 lg:mt-60 ${
+        className={`my-40 lg:mt-80 ${
           props.mode === "dark" ? "text-cyan-100" : "text-neutral-900"
         } mx-8 lg:pl-72 duration-[2500ms] max-w-[70rem] ${
           props.navDisplay === true ? "-translate-x-2/3 " : ""
@@ -20,7 +20,7 @@ function About(props) {
         </p>
       </div>
       <div
-        className={`relative hidden lg:block -top-[50vh] left-[130vh] ${
+        className={`relative hidden lg:block -top-[60vh] left-[130vh] ${
           props.mode === "dark" ? "invert-[20%]" : ""
         }`}
       >
