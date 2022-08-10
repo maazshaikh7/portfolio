@@ -4,7 +4,7 @@ function Navbar(props) {
   return (
     <>
       <nav
-        className={`absolute sm:fixed pt-8 w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/3 rounded-r-xl bg-gradient-to-tr ${
+        className={`fixed pt-8 w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/3 rounded-r-xl bg-gradient-to-tr ${
           props.mode == "light"
             ? "from-blue-500 to-cyan-100"
             : "from-blue-900 to-violet-900 "
@@ -18,7 +18,7 @@ function Navbar(props) {
               props.mode === "light" ? "bg-sky-200" : "bg-blue-900"
             } blur-3xl`}
           ></div>
-          <div className="data relative py-20 mx-10">
+          <div className="data relative md:py-20 mx-10">
             <div
               className={`mask sm:flex justify-center items-end ${
                 props.mode === "light" ? "text-sky-900" : "text-cyan-200"
@@ -41,31 +41,31 @@ function Navbar(props) {
           <ul
             className={`navlist font-bold text-lg ${
               props.mode === "light" ? "text-sky-900" : "text-cyan-200"
-            } list-none px-28 pb-28 flex flex-col -translate-x-14 text-center space-y-12`}
+            } list-none px-28 pb-28 flex flex-col -translate-x-14 text-center space-y-1 sm:space-y-12`}
           >
             <li className="navItem">
               <a href="/" className="navLink">
-                <i className="bx bx-home"></i>Home
+                <i className="bx bx-home hidden md:inline"></i><p>Home</p>
               </a>
             </li>
             <li className="navItem">
               <a href="/" className="navLink">
-                <i className="bx bx-user"></i>About Me
+                <i className="bx bx-user hidden md:inline"></i><p>About Me</p>
               </a>
             </li>
             <li className="navItem">
               <a href="/" className="navLink">
-                <i className="bx bx-briefcase"></i>Portfolio
+                <i className="bx bx-briefcase hidden md:inline"></i><p>Portfolio</p>
               </a>
             </li>
             <li className="navItem">
               <a href="/" className="navLink">
-                <i className="bx bx-bookmark"></i>Skills
+                <i className="bx bx-bookmark hidden md:inline"></i><p>Skills</p>
               </a>
             </li>
             <li className="navItem">
               <a href="/" className="navLink">
-                <i className="bx bxs-chat"></i>Contact Me
+                <i className="bx bxs-chat hidden md:inline"></i><p>Contact Me</p>
               </a>
             </li>
             <ul className="socials flex justify-center py-3">

@@ -11,7 +11,7 @@ function Skills(props) {
         <h1 className="text-7xl font-bold my-28 lg:pb-28 text-center">
           My Skills
         </h1>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 place-items-center text-xl text-neutral-100 border-2 font-semibold w-1/2 mx-auto bg-neutral-900 rounded-xl p-10 ">
+        <ul className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 place-items-center text-xl text-neutral-100 border-2 font-semibold w-1/2 mx-auto bg-neutral-900 rounded-xl p-10 ">
           <li className="text-center w-20">
             <img src="src\assets\html.webp" alt="HTML icon" /> Html 5
           </li>
