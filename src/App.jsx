@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 
+
 function App() {
   // Parallax effect
   const [offset, setOffset] = useState(0);
