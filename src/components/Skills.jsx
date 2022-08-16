@@ -11,7 +11,7 @@ function Skills(props) {
         <h1 className="text-7xl font-bold my-28 lg:pb-28 text-center">
           My Skills
         </h1>
-        <ul className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 place-items-center text-xl text-neutral-100 border-2 font-semibold w-1/2 mx-auto bg-neutral-900 rounded-xl p-10 ">
+        <ul className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 place-items-center text-xl text-neutral-100 border-2 shadow-xl shadow-neutral-700 font-semibold w-1/2 mx-auto bg-neutral-900 rounded-xl p-10 ">
           <li className="text-center w-20">
             <img src="src\assets\html.webp" alt="HTML icon" /> Html 5
           </li>
@@ -25,11 +25,11 @@ function Skills(props) {
             <img src="src\assets\react.png" alt="React js icon" /> React js
           </li>
           <li className="text-center w-20">
-            <img src="src\assets\bootstrap.png" alt="Bootstrap icon" />{" "}
+            <img src="src\assets\bootstrap.png" alt="Bootstrap icon" />
             Bootstrap
           </li>
           <li className="text-center w-20">
-            <img src="src\assets\tailwind.png" alt="Tailwind CSS icon" />{" "}
+            <img src="src\assets\tailwind.png" alt="Tailwind CSS icon" />
             Tailwind css
           </li>
         </ul>

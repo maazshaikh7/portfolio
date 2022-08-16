@@ -39,6 +39,7 @@ function App() {
   return (
     <>
       {/* TODO: React router DOM*/}
+      {/* TODO: CV screener*/}
       <Navbar mode={mode} toggleMode={toggleMode} navDisplay={navDisplay} toggleNav={toggleNav} />
       <Home mode={mode} navDisplay={navDisplay}/>
       <About mode={mode} navDisplay={navDisplay}/>

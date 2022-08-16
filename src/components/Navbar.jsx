@@ -107,7 +107,7 @@ function Navbar(props) {
           props.mode === "dark" ? "text-white" : ""
         }`}
       >
-        <i className="bx text-5xl bxs-notepad"></i>
+        <i className="bx text-6xl bxs-notepad"></i>
         <p className="font-bold pl-3">CV</p>
       </div>
     </>
