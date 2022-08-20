@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Navbar(props) {
   return (
     <>
       <nav
-        className={`fixed pt-8 w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/3 rounded-r-xl bg-gradient-to-tr ${
+        className={`fixed pt-8 w-2/3 md:w-1/2 top-0 lg:w-1/3 xl:w-1/3 rounded-r-xl bg-gradient-to-tr ${
           props.mode == "light"
             ? "from-blue-500 to-cyan-100"
             : "from-blue-900 to-violet-900 "
@@ -12,13 +12,13 @@ function Navbar(props) {
           props.navDisplay ? "" : "-translate-x-full"
         }`}
       >
-        <div className="container ml-6 mr-6">
+        <div className="container mx-6">
           <div
             className={`shape w-52 h-52 rounded-full absolute -top-8 -left-8 ${
               props.mode === "light" ? "bg-sky-200" : "bg-blue-900"
             } blur-3xl`}
           ></div>
-          <div className="data relative md:py-20 mx-10">
+          <div className="data relative py-5 md:py-14 mx-10">
             <div
               className={`mask sm:flex justify-center items-end ${
                 props.mode === "light" ? "text-sky-900" : "text-cyan-200"
@@ -41,49 +41,53 @@ function Navbar(props) {
           <ul
             className={`navlist font-bold text-lg ${
               props.mode === "light" ? "text-sky-900" : "text-cyan-200"
-            } list-none px-28 pb-28 flex flex-col -translate-x-14 text-center space-y-1 sm:space-y-12`}
+            } list-none px-32 mt-16 flex flex-col -translate-x-14 text-center space-y-7`}
           >
             <li className="navItem">
               <a href="/" className="navLink">
-                <i className="bx bx-home hidden md:inline"></i><p>Home</p>
+                <i className="bx bx-home hidden md:inline"></i>
+                <p>Home</p>
               </a>
             </li>
             <li className="navItem">
-              <a href="/" className="navLink">
-                <i className="bx bx-user hidden md:inline"></i><p>About Me</p>
+              <a href="/about" className="navLink">
+                <i className="bx bx-user hidden md:inline"></i>
+                <p>About Me</p>
               </a>
             </li>
             <li className="navItem">
-              <a href="/" className="navLink">
-                <i className="bx bx-briefcase hidden md:inline"></i><p>Portfolio</p>
+              <a href="/portfolio" className="navLink">
+                <i className="bx bx-briefcase hidden md:inline"></i>
+                <p>Portfolio</p>
               </a>
             </li>
             <li className="navItem">
-              <a href="/" className="navLink">
-                <i className="bx bx-bookmark hidden md:inline"></i><p>Skills</p>
+              <a href="/skills" className="navLink">
+                <i className="bx bx-bookmark hidden md:inline"></i>
+                <p>Skills</p>
               </a>
             </li>
             <li className="navItem">
-              <a href="/" className="navLink">
-                <i className="bx bxs-chat hidden md:inline"></i><p>Contact Me</p>
+              <a href="/contact" className="navLink">
+                <i className="bx bxs-chat hidden md:inline"></i>
+                <p>Contact Me</p>
               </a>
             </li>
-            <ul className="socials flex justify-center py-3">
+            <ul className="socials flex justify-center p-7">
               <li>
-                <i className="bx bxl-facebook cursor-pointer hover:text-4xl"></i>
+                <a className="bx bxl-facebook cursor-pointer hover:text-4xl" href="https://www.facebook.com/profile.php?id=100071131632511" target="_blank"></a>
               </li>
               <li>
-                <i className="bx bxl-github cursor-pointer hover:text-4xl"></i>
+                <a className="bx bxl-github cursor-pointer hover:text-4xl" href="https://github.com/maazshaikh7" target="_blank"></a>
               </li>
               <li>
-                <i className="bx bxl-linkedin cursor-pointer hover:text-4xl"></i>
+                <a className="bx bxl-linkedin cursor-pointer hover:text-4xl" href="https://linkedin.com" target="_blank"></a>
               </li>
             </ul>
           </ul>
         </div>
       </nav>
       <div className="close fixed top-5 left-5 inline-flex cursor-pointer mb-16 font-bold z-10 ">
-        {/* add class list bx-menu duration-300  */}
         <i
           onClick={props.toggleNav}
           className={`bx ${
@@ -102,14 +106,15 @@ function Navbar(props) {
           }`}
         ></i>{" "}
       </button>
-      <div
+      <a
+        href="/cv"
         className={`resume fixed right-6 top-4 sm:float-right sm:top-[90vh] sm:right-10 ${
           props.mode === "dark" ? "text-white" : ""
         }`}
       >
         <i className="bx text-6xl bxs-notepad"></i>
         <p className="font-bold pl-3">CV</p>
-      </div>
+      </a>
     </>
   );
 }

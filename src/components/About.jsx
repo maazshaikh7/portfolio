@@ -2,7 +2,7 @@ import React from "react";
 
 function About(props) {
   return (
-    <>
+    <div className={`${props.style === "fixed" ? 'max-h-[65.8vh]' : 'max-h-screen' }`}>
       <div
         className={`my-40 lg:mt-80 ${
           props.mode === "dark" ? "text-cyan-100" : "text-neutral-900"
@@ -12,11 +12,12 @@ function About(props) {
       >
         <h1 className="font-bold text-7xl pb-3 -z-10">About me</h1>
         <p className="text-xl -z-10">
-          something about me i haven't figured out yet. Lorem ipsum dolor sit
-          amet consectetur, adipisicing elit. Delectus, repellat laborum.
-          Obcaecati provident id deleniti, ad incidunt eius officia rerum ipsa
-          repellendus veritatis ex excepturi sint unde sit officiis corrupti
-          iusto a necessitatibus molestiae.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+          necessitatibus doloribus fugit voluptates iure distinctio! Sint, atque
+          praesentium. Eius, culpa architecto obcaecati quos maxime neque ex
+          tenetur quam deleniti expedita quod consequatur magnam quae eum
+          blanditiis nostrum velit, cupiditate doloribus, reprehenderit repellat
+          repellendus? Repellat aut odio expedita ipsa quod ipsam?
         </p>
       </div>
       <div
@@ -26,14 +27,18 @@ function About(props) {
       >
         <img src="src/assets/airballoon.webp" alt="Hot air balloon" />
       </div>
-      <img
-        src="src\assets\cloud.png"
-        alt="cloud"
-        className={`min-w-[90rem] opacity-50 hidden lg:block absolute top-[115vh] duration-[2500ms] -z-20  ${
+      <div
+        className={`opacity-50 hidden ${props.style === 'fixed'? 'fixed top-28' : 'relative -top-[110vh]'} lg:block duration-[2500ms] -z-20 ${
           props.navDisplay === true ? "-translate-x-2/3" : ""
         } `}
-      />
-    </>
+      >
+        <img
+          src="src\assets\cloud.png"
+          alt="cloud"
+          className="min-w-[90rem] "
+        />
+      </div>
+    </div>
   );
 }
 
