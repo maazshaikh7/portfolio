@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
+import CV from "./components/CV";
 
 function App() {
   // Parallax effect
@@ -38,21 +39,20 @@ function App() {
     document.body.style.backgroundImage =
       "linear-gradient(to top, black, midnightblue, slateblue)";
   }
+
   return (
     <>
-      {/* TODO: React router DOM*/}
-      {/* TODO: CV screener*/}
-      <Navbar
-        mode={mode}
-        toggleMode={toggleMode}
-        navDisplay={navDisplay}
-        toggleNav={toggleNav}
-      />
       <Routes>
         <Route
           path="/"
           element={
             <>
+              <Navbar
+                mode={mode}
+                toggleMode={toggleMode}
+                navDisplay={navDisplay}
+                toggleNav={toggleNav}
+              />
               <Home mode={mode} navDisplay={navDisplay} />{" "}
               <About mode={mode} navDisplay={navDisplay} />
               <Portfolio mode={mode} navDisplay={navDisplay} />
@@ -63,19 +63,64 @@ function App() {
         />
         <Route
           path="/about"
-          element={<About mode={mode} navDisplay={navDisplay} style="fixed"/>}
+          element={
+            <>
+              <Navbar
+                mode={mode}
+                toggleMode={toggleMode}
+                navDisplay={navDisplay}
+                toggleNav={toggleNav}
+              />
+              <About mode={mode} navDisplay={navDisplay} style="fixed" />
+            </>
+          }
         />
         <Route
           path="/portfolio"
-          element={<Portfolio mode={mode} navDisplay={navDisplay} />}
+          element={
+            <>
+              {" "}
+              <Navbar
+                mode={mode}
+                toggleMode={toggleMode}
+                navDisplay={navDisplay}
+                toggleNav={toggleNav}
+              />
+              <Portfolio mode={mode} navDisplay={navDisplay} />
+            </>
+          }
         />
         <Route
           path="/skills"
-          element={<Skills mode={mode} navDisplay={navDisplay} />}
+          element={
+            <>
+              <Navbar
+                mode={mode}
+                toggleMode={toggleMode}
+                navDisplay={navDisplay}
+                toggleNav={toggleNav}
+              />{" "}
+              <Skills mode={mode} navDisplay={navDisplay} />
+            </>
+          }
         />
         <Route
           path="/contact"
-          element={<Contact mode={mode} navDisplay={navDisplay} />}
+          element={
+            <>
+              <Navbar
+                mode={mode}
+                toggleMode={toggleMode}
+                navDisplay={navDisplay}
+                toggleNav={toggleNav}
+              />
+              <Contact mode={mode} navDisplay={navDisplay} />
+            </>
+          }
+        />
+        <Route
+          path="/cv"
+          element={<CV mode={mode} navDisplay={navDisplay} />}
         />
       </Routes>
     </>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar(props) {
   return (
@@ -44,34 +45,34 @@ function Navbar(props) {
             } list-none px-32 mt-16 flex flex-col -translate-x-14 text-center space-y-7`}
           >
             <li className="navItem">
-              <a href="/" className="navLink">
+              <Link to="/" className="navLink">
                 <i className="bx bx-home hidden md:inline"></i>
                 <p>Home</p>
-              </a>
+              </Link>
             </li>
             <li className="navItem">
-              <a href="/about" className="navLink">
+              <Link to="/about" className="navLink">
                 <i className="bx bx-user hidden md:inline"></i>
                 <p>About Me</p>
-              </a>
+              </Link>
             </li>
             <li className="navItem">
-              <a href="/portfolio" className="navLink">
+              <Link to="/portfolio" className="navLink">
                 <i className="bx bx-briefcase hidden md:inline"></i>
                 <p>Portfolio</p>
-              </a>
+              </Link>
             </li>
             <li className="navItem">
-              <a href="/skills" className="navLink">
+              <Link to="/skills" className="navLink">
                 <i className="bx bx-bookmark hidden md:inline"></i>
                 <p>Skills</p>
-              </a>
+              </Link>
             </li>
             <li className="navItem">
-              <a href="/contact" className="navLink">
+              <Link to="/contact" className="navLink">
                 <i className="bx bxs-chat hidden md:inline"></i>
                 <p>Contact Me</p>
-              </a>
+              </Link>
             </li>
             <ul className="socials flex justify-center p-7">
               <li>
@@ -106,15 +107,15 @@ function Navbar(props) {
           }`}
         ></i>{" "}
       </button>
-      <a
-        href="/cv"
+      <Link
+        to="/cv"
         className={`resume fixed right-6 top-4 sm:float-right sm:top-[90vh] sm:right-10 ${
           props.mode === "dark" ? "text-white" : ""
         }`}
       >
         <i className="bx text-6xl bxs-notepad"></i>
         <p className="font-bold pl-3">CV</p>
-      </a>
+      </Link>
     </>
   );
 }

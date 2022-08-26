@@ -1,9 +1,10 @@
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
 
+*{
+    font-family: 'Arvo', serif;
+}
 .navLink{
     @apply hover:text-xl rounded-xl hover:text-black duration-300
 }

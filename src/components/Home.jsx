@@ -1,9 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home(props) {
   return (
     <>
-    <div className="fill w-screen h-screen"></div>
+      <div className="fill w-screen h-screen -z-50 grid items-center text-center ">
+        <Link to="/contact">
+          <button className={`p-3 ${
+          props.navDisplay === true
+            ? "-translate-x-[100vh]"
+            : "-translate-x-52 "
+        } text-lg my-5 lg:my-2 duration-[2500ms] rounded-full translate-y-20 bg-cyan-200 hover:bg-indigo-500 hover:border-2 active:border-0  font-semibold`}>
+            Contact me
+          </button>
+        </Link>
+      </div>
       <main
         className={`absolute top-1/4 duration-[2500ms] right-[5%] -z-10 ${
           props.navDisplay === false
@@ -25,18 +36,17 @@ function Home(props) {
             props.navDisplay === true ? "lg:hidden sm:translate-x-0" : ""
           } `}
         >
-          <div className={`${props.mode === "dark" ? "text-cyan-100" : "text-neutral-900"} `}>
+          <div
+            className={`${
+              props.mode === "dark" ? "text-cyan-100" : "text-neutral-900"
+            } `}
+          >
             <p className="text-2xl my-1 lg:m-0">Hi, I'm,</p>
             <h1 className="text-7xl font-sans my-1 lg:m-0">Maaz Shaikh</h1>
-            <h3 className="text-3xl my-1 lg:m-0">Frontend Developer | UI/UX Designer</h3>
+            <h3 className="text-3xl my-1 lg:m-0">
+              Frontend Developer | UI/UX Designer
+            </h3>
           </div>
-          <span className="contact">
-            <button className="p-3 z-20 text-lg my-5 lg:my-2 rounded-full bg-cyan-200 ">
-              Contact me
-            </button>
-          </span>
-          
-        
         </div>
       </main>
       <img
