@@ -82,6 +82,7 @@ function Navbar(props) {
                 <a className="bx bxl-github cursor-pointer hover:text-4xl" href="https://github.com/maazshaikh7" target="_blank"></a>
               </li>
               <li>
+                {/* TODO */}
                 <a className="bx bxl-linkedin cursor-pointer hover:text-4xl" href="https://linkedin.com" target="_blank"></a>
               </li>
             </ul>
@@ -113,7 +114,7 @@ function Navbar(props) {
           props.mode === "dark" ? "text-white" : ""
         }`}
       >
-        <i className="bx text-6xl bxs-notepad"></i>
+        <i className="bx text-5xl bxs-notepad"></i>
         <p className="font-bold pl-3">CV</p>
       </Link>
     </>

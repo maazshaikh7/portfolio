@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 function Home(props) {
   return (
     <>
-      <div className="fill w-screen h-screen -z-50 grid items-center text-center ">
+      <div className="fill w-screen h-screen -z-50 grid place-items-center">
         <Link to="/contact">
           <button className={`p-3 ${
           props.navDisplay === true
-            ? "-translate-x-[100vh]"
-            : "-translate-x-52 "
-        } text-lg my-5 lg:my-2 duration-[2500ms] rounded-full translate-y-20 bg-cyan-200 hover:bg-indigo-500 hover:border-2 active:border-0  font-semibold`}>
+            ? "-translate-x-[100vh] bg-transparent"
+            : "xl:-translate-x-52 "
+        } text-lg my-5 lg:my-2 duration-[2500ms] translate-y-60 rounded-full lg:translate-y-52 xl:translate-y-28 bg-cyan-200 hover:bg-indigo-500 hover:border-2 active:border-0  font-semibold`}>
             Contact me
           </button>
         </Link>
@@ -25,7 +25,7 @@ function Home(props) {
         <img
           src="src\assets\cloud.png"
           alt="cloud"
-          className="h-[30rem] opacity-50 hidden lg:block"
+          className="h-[32rem] opacity-50 hidden lg:block"
         />
         <div
           className={`details lg:absolute m-8 md:m-20 lg:m-0 top-36 duration-700 right-1/4 font-semibold ${

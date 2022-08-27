@@ -13,3 +13,6 @@
 }
 @tailwind utilities;
 
+.ulul li{
+    @apply hover:underline
+}
