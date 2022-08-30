@@ -2,9 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function CV() {
+
   return (
-    <div className="font-serif bg-gray-500 min-h-screen flex justify-center items-center">
-      <div className="absolute top-10 left-10 z-10"><Link to="/" class='bx bx-arrow-back bg-neutral-100 rounded-full p-1'></Link></div>
+    
+     <div className="font-serif bg-gray-500 min-h-screen flex justify-center items-center">
+      {/* <div className="absolute top-10 left-10 z-10 text-center">
+        <Link
+          to="/"
+          className="bx bx-arrow-back bg-neutral-100 rounded-full p-1 mb-2"
+        ></Link>
+        <br />
+        <p className="hidden sm:block text-neutral-300">Home</p>
+      </div>
+      <div
+        className="absolute top-10 right-10 z-10 text-center"
+      >
+      *** ADD CV PDF USING PRINT WEBSITE***
+        <a href="src\assets\cv.pdf" download={"maaz-cv"} className="bx bx-download bg-neutral-100 rounded-full p-1 mb-2"></a>
+        <br />
+        <p className="hidden sm:block text-neutral-300"> Download CV</p>
+      </div> */}
       <div className="container relative w-full max-w-5xl min-h-[1000px] m-5 xl:m-16 bg-white grid grid-cols-1 xl:grid-cols-3 shadow-2xl">
         <div className="left relative bg-neutral-800 p-10 text-neutral-100">
           <div className="profileText relative flex flex-col items-center space-y-10 pb-8 border-b-2 border-neutral-500">
@@ -23,24 +40,24 @@ function CV() {
             </h3>
             <ul className="space-y-3 ulul text-neutral-300">
               <li>
-                <i class="bx bx-phone text-lg"></i>
+                <i className="bx bx-phone text-lg"></i>
                 <span className="text">+91 740 0064 559</span>
               </li>
               <li>
-                <i class="bx bxl-gmail text-lg"></i>
+                <i className="bx bxl-gmail text-lg"></i>
                 <span className="text">maazshaikh4559@gmail.com</span>
               </li>
               <li>
-                <i class="bx bx-globe text-lg"></i>
+                <i className="bx bx-globe text-lg"></i>
                 <span className="text">www.maazshaikh.com</span>
               </li>
               <li>
-                <i class="bx bxl-linkedin text-lg"></i>
+                <i className="bx bxl-linkedin text-lg"></i>
                 {/* TODO */}
                 <span className="text">www.linkedin.com/</span>
               </li>
               <li>
-                <i class="bx bx-current-location text-lg"></i>
+                <i className="bx bx-current-location text-lg"></i>
                 <span className="text">Mumbai, Maharashtra, India</span>
               </li>
             </ul>
@@ -51,7 +68,7 @@ function CV() {
             </h3>
             <ul className="space-y-3 text-neutral-300 hover:text-white">
               <li>
-                <p className="text-xs underline pb-2">2022-2025</p>
+                <p className="text-xs underline pb-2">2022-2025  &#91; Pursuing &#93;</p>
                 <h4>Bachelors in Computer Applications &#91; BCA &#93;</h4>
                 <h5 className="text-xs pt-1">
                   Somaiya Vidyavihar University &#91; Mumbai &#93;
@@ -114,7 +131,12 @@ function CV() {
               molestiae, laborum eveniet dolorem exercitationem doloremque
               magnam. Praesentium, qui dolores!
             </p>
-            <Link to="/contact" className="block text-blue-500 text-lg hover:underline hover:font-semibold">Add work +</Link>
+            <Link
+              to="/contact"
+              className="block text-blue-500 text-lg hover:underline hover:font-semibold"
+            >
+              Add work +
+            </Link>
           </div>
           <div className="skills my-10">
             <h2 className="text-3xl font-semibold hover:tracking-wider duration-300 mb-8">
@@ -135,19 +157,19 @@ function CV() {
             </h2>
             <ul className="flex justify-between flex-wrap text-center lg:w-2/3">
               <li>
-                <i class="bx bxs-game"></i>
+                <i className="bx bxs-game"></i>
                 <p>GAMING</p>
               </li>
               <li>
-                <i class="bx bxs-plane-alt"></i>
+                <i className="bx bxs-plane-alt"></i>
                 <p>TRAVELLING</p>
               </li>
               <li>
-                <i class="bx bx-football"></i>
+                <i className="bx bx-football"></i>
                 <p>FOOTBALL</p>
               </li>
               <li>
-                <i class="bx bxs-book-open"></i>
+                <i className="bx bxs-book-open"></i>
                 <p>READING</p>
               </li>
             </ul>

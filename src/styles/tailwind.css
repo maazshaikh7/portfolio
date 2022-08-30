@@ -9,7 +9,7 @@
     @apply hover:text-xl rounded-xl hover:text-black duration-300
 }
 .bx{
-    @apply text-3xl pr-2 translate-y-1
+    @apply text-3xl pr-2 translate-y-1 hover:opacity-75 duration-100
 }
 @tailwind utilities;
 
