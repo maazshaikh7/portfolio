@@ -2,11 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function CV() {
-
   return (
-    
-     <div className="font-serif bg-gray-500 min-h-screen flex justify-center items-center">
-      {/* <div className="absolute top-10 left-10 z-10 text-center">
+    <div className="font-serif bg-gray-500 min-h-screen flex justify-center items-center">
+      <div className="absolute top-10 left-10 z-10 text-center">
         <Link
           to="/"
           className="bx bx-arrow-back bg-neutral-100 rounded-full p-1 mb-2"
@@ -14,14 +12,16 @@ function CV() {
         <br />
         <p className="hidden sm:block text-neutral-300">Home</p>
       </div>
-      <div
-        className="absolute top-10 right-10 z-10 text-center"
-      >
-      *** ADD CV PDF USING PRINT WEBSITE***
-        <a href="src\assets\cv.pdf" download={"maaz-cv"} className="bx bx-download bg-neutral-100 rounded-full p-1 mb-2"></a>
+      <div className="absolute top-10 right-10 z-10 text-center">
+        {/* *** ADD CV PDF USING PRINT WEBSITE*** */}
+        <a
+          href="src\assets\cv.pdf"
+          download={"maaz-cv"}
+          className="bx bx-download bg-neutral-100 rounded-full p-1 mb-2"
+        ></a>
         <br />
         <p className="hidden sm:block text-neutral-300"> Download CV</p>
-      </div> */}
+      </div>
       <div className="container relative w-full max-w-5xl min-h-[1000px] m-5 xl:m-16 bg-white grid grid-cols-1 xl:grid-cols-3 shadow-2xl">
         <div className="left relative bg-neutral-800 p-10 text-neutral-100">
           <div className="profileText relative flex flex-col items-center space-y-10 pb-8 border-b-2 border-neutral-500">
@@ -66,9 +66,12 @@ function CV() {
             <h3 className="text-2xl font-semibold tracking-wider hover:tracking-widest duration-300 mb-8">
               EDUCATION
             </h3>
-            <ul className="space-y-3 text-neutral-300 hover:text-white">
+            <ul className="space-y-3 text-neutral-300 hover:text-white group">
               <li>
-                <p className="text-xs underline pb-2">2022-2025  &#91; Pursuing &#93;</p>
+                <div className="text-xs underline pb-2">
+                  <p className="inline">2022-2025 </p>
+                  <p className="inline-block group-hover:text-red-500"> &#91; Pursuing &#93;</p>
+                </div>
                 <h4>Bachelors in Computer Applications &#91; BCA &#93;</h4>
                 <h5 className="text-xs pt-1">
                   Somaiya Vidyavihar University &#91; Mumbai &#93;
@@ -92,15 +95,12 @@ function CV() {
               PROFILE
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              odit temporibus molestias impedit aut iusto praesentium
-              consequuntur ex consequatur dolores culpa.
-              <br />
-              <br /> Repudiandae libero ipsa dolore voluptates quas ipsam
-              adipisci placeat maxime minima est neque? Dignissimos harum
-              consequatur explicabo recusandae numquam tenetur quos modi
-              voluptatem aut eligendi. Nobis numquam aliquid iusto neque
-              suscipit!
+            I am a self taught frontend engineer based in Mumbai, India. Over the
+          past year, I have worked on personal and corporate projects using CSS
+          frameworks, react and my photoshop skills. I am always eager to learn
+          new skills and up for challenges!! I can bring innovative ideas to web
+          development and contribute to building a strong team bond and a
+          healthy working envoirnment.
             </p>
           </div>
           <div className="work my-10 pt-5 space-y-5">

@@ -4,14 +4,14 @@ function Skills(props) {
   return (
     <>
       <div
-        className={`my-96 ${
+        className={`min-h-screen ${
           props.mode === "dark" ? "text-cyan-100" : "text-neutral-900"
         } `}
       >
         <h1 className="text-7xl font-bold my-28 lg:pb-28 text-center">
           My Skills
         </h1>
-        <ul className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 place-items-center text-xl text-neutral-100 border-2 shadow-xl shadow-neutral-700 font-semibold w-1/2 mx-auto bg-neutral-900 rounded-xl p-10 ">
+        <ul className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center text-xl text-neutral-100 border-2 shadow-xl shadow-neutral-700 font-semibold w-1/2 mx-auto bg-neutral-900 rounded-xl p-10 ">
           <li className="text-center w-20">
             <img src="src\assets\html.webp" alt="HTML icon" /> Html 5
           </li>
@@ -31,6 +31,14 @@ function Skills(props) {
           <li className="text-center w-20">
             <img src="src\assets\tailwind.png" alt="Tailwind CSS icon" />
             Tailwind css
+          </li>
+          <li className="text-center w-20">
+            <img src="src\assets\git.png" alt="Git icon" />
+            Git
+          </li>
+          <li className="text-center w-20">
+            <img className="invert" src="src\assets\github.png" alt="github icon" />
+            Github
           </li>
         </ul>
       </div>

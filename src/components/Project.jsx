@@ -4,18 +4,15 @@ function Project(props) {
   return (
     <>
     {/* ABOUT PROJECT ON HOVER */}
-      <div className={`project p-5 bg-gradient-to-tr ${
-          props.mode == "dark"
-            ? "from-blue-500 to-cyan-100"
-            : "from-blue-900 to-indigo-900 "
-        } hover:border-4 rounded-xl min-w-48`}>
+      <div className={`group p-5 bg-neutral-900 border-4 shadow-2xl rounded-xl min-w-fit `}>
         <div className={`project-name p-3 text-center text-2xl font-bold ${props.mode === 'dark' ? 'bg-neutral-800': 'bg-neutral-100'} rounded-lg`}>{props.projectName}</div>
+        <div className="about relative w-fit pl-1 pr-12 text-lg h-0 hidden text-neutral-200 top-10 left-7 group-hover:block">{props.about}</div>
         <img
           src={props.img}
-          className="preview w-80 h-64 mx-auto m-5 rounded-xl"
+          className=" w-80 h-64 mx-auto m-5 rounded-xl group-hover:opacity-5 duration-300"
         />
-        <button className="py-2 px-10 m-2 rounded-full block mx-auto bg-neutral-100 text-xl text-black">Live Preview</button>
-        <button className="py-2 px-10 m-2 rounded-full block mx-auto bg-neutral-100 text-xl text-black">Source code</button>
+        <a href={props.preview} target="_blank"><button className="py-2 px-10 m-2 rounded-full block mx-auto bg-neutral-100 text-xl text-black">Live Preview</button></a>
+        <a href={props.code} target="_blank"><button className="py-2 px-10 m-2 rounded-full block mx-auto bg-neutral-100 text-xl text-black">Source code</button></a>
 
       </div>
     </>

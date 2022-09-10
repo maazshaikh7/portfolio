@@ -16,3 +16,7 @@
 .ulul li{
     @apply hover:underline
 }
+
+input, textarea{
+    @apply hover:border-sky-700 border-2
+}
