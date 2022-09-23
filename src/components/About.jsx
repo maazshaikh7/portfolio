@@ -35,7 +35,7 @@ function About(props) {
           } `}
         >
           <img
-            src="src\assets\cloud.png"
+            src="\assets\cloud.png"
             alt="cloud"
             className="min-w-[90rem] "
           />
@@ -45,7 +45,7 @@ function About(props) {
             props.mode === "dark" ? "invert-[20%]" : ""
           }`}
         >
-          <img src="src/assets/airballoon.webp" alt="Hot air balloon" />
+          <img src="\assets\airballoon.webp" alt="Hot air balloon" />
         </div>
       </div>
     </div>

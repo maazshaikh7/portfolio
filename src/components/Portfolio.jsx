@@ -13,7 +13,7 @@ function Portfolio(props) {
         <Project
           projectName={"NEWS-MONKEY"}
           mode={props.mode}
-          img={"src\\assets\\newsapp.png"}
+          img={"\\assets\\newsapp.png"}
           preview={"https://newsapp-maazshaikh7.netlify.app"}
           code={"https://github.com/maazshaikh7/newsapp"}
           about={"NewsApp shows all the breaking news at one place using NEWS API, react and bootstrap"}
@@ -21,7 +21,7 @@ function Portfolio(props) {
           <Project
             projectName={"TODO-LIST"}
             mode={props.mode}
-            img={"src\\assets\\todolist.png"}
+            img={"\\assets\\todolist.png"}
             preview={"https://maazshaikh7.github.io/ToDoList/"}
             code={"https://github.com/maazshaikh7/todolist"}
             about={"As the name suggests, a list of things to do, stored in local-storage made using pure HTML, CSS and Javascript."}
@@ -29,7 +29,7 @@ function Portfolio(props) {
         <Project
           projectName={"ETCH-A-SKETCH"}
           mode={props.mode}
-          img={"src\\assets\\etch-a-sketch.png"}
+          img={"\\assets\\etch-a-sketch.png"}
           preview={"https://maazshaikh7.github.io/Etch-A-Sketch/"}
           code={"https://github.com/maazshaikh7/etch-a-sketch"}
           about={"A sketchpad on web with rgb sketching made using pure HTML, CSS and Javscript"}
@@ -37,7 +37,7 @@ function Portfolio(props) {
         <Project
           projectName={"ODIN-CALCULATOR"}
           mode={props.mode}
-          img={"src\\assets\\odin-calculator.png"}
+          img={"\\assets\\odin-calculator.png"}
           preview={"https://odin-calculator-maazshaikh7.netlify.app"}
           code={"https://github.com/maazshaikh7/odin-calculator"}
           about={"'The odin project' basic calculator remade using tailwind-css and javascript"}
@@ -53,7 +53,7 @@ function Portfolio(props) {
         <Project
           projectName={"MICROSOFT CLONE"}
           mode={props.mode}
-          img={"src\\assets\\ms-clone.png"}
+          img={"\\assets\\ms-clone.png"}
           preview={"https://pagenotfound.netlify.app"}
           code={"https://github.com/maazshaikh7/ms-clone"}
           about={"Cloned design of microsoft website as of July 2022 using tailwind-css and react"}
@@ -61,7 +61,7 @@ function Portfolio(props) {
         <Project
           projectName={"TEXTUTILS"}
           mode={props.mode}
-          img={"src\\assets\\textutils.png"}
+          img={"\\assets\\textutils.png"}
           preview={"https://textutils-maazshaikh7.netlify.app"}
           code={"https://github.com/maazshaikh7/textutils"}
           about={
