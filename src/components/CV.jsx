@@ -142,13 +142,15 @@ function CV() {
             <h2 className="text-3xl font-semibold hover:tracking-wider duration-300 mb-8">
               PROFESSIONAL SKILLS
             </h2>
-            <ul className="list-disc pl-7">
+            <ul className="list-disc pl-7 grid grid-cols-2">
               <li>HTML 5</li>
               <li>CSS 3</li>
               <li>JAVASCRIPT</li>
               <li>REACT JS</li>
               <li>TAILWIND CSS</li>
               <li>BOOTSTRAP</li>
+              <li>GIT</li>
+              <li>GITHUB</li>
             </ul>
           </div>
           <div className="interests my-10 ">

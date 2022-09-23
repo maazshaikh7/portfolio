@@ -14,7 +14,7 @@ function Portfolio(props) {
           projectName={"NEWS-MONKEY"}
           mode={props.mode}
           img={"src\\assets\\newsapp.png"}
-          preview={""}
+          preview={"https://newsapp-maazshaikh7.netlify.app"}
           code={"https://github.com/maazshaikh7/newsapp"}
           about={"NewsApp shows all the breaking news at one place using NEWS API, react and bootstrap"}
         />
@@ -22,7 +22,7 @@ function Portfolio(props) {
             projectName={"TODO-LIST"}
             mode={props.mode}
             img={"src\\assets\\todolist.png"}
-            preview={""}
+            preview={"https://maazshaikh7.github.io/ToDoList/"}
             code={"https://github.com/maazshaikh7/todolist"}
             about={"As the name suggests, a list of things to do, stored in local-storage made using pure HTML, CSS and Javascript."}
           />
@@ -30,7 +30,7 @@ function Portfolio(props) {
           projectName={"ETCH-A-SKETCH"}
           mode={props.mode}
           img={"src\\assets\\etch-a-sketch.png"}
-          preview={""}
+          preview={"https://maazshaikh7.github.io/Etch-A-Sketch/"}
           code={"https://github.com/maazshaikh7/etch-a-sketch"}
           about={"A sketchpad on web with rgb sketching made using pure HTML, CSS and Javscript"}
         />
@@ -38,7 +38,7 @@ function Portfolio(props) {
           projectName={"ODIN-CALCULATOR"}
           mode={props.mode}
           img={"src\\assets\\odin-calculator.png"}
-          preview={""}
+          preview={"https://odin-calculator-maazshaikh7.netlify.app"}
           code={"https://github.com/maazshaikh7/odin-calculator"}
           about={"'The odin project' basic calculator remade using tailwind-css and javascript"}
         />
@@ -54,7 +54,7 @@ function Portfolio(props) {
           projectName={"MICROSOFT CLONE"}
           mode={props.mode}
           img={"src\\assets\\ms-clone.png"}
-          preview={""}
+          preview={"https://pagenotfound.netlify.app"}
           code={"https://github.com/maazshaikh7/ms-clone"}
           about={"Cloned design of microsoft website as of July 2022 using tailwind-css and react"}
         />
@@ -62,7 +62,7 @@ function Portfolio(props) {
           projectName={"TEXTUTILS"}
           mode={props.mode}
           img={"src\\assets\\textutils.png"}
-          preview={"https://www.google.com"}
+          preview={"https://textutils-maazshaikh7.netlify.app"}
           code={"https://github.com/maazshaikh7/textutils"}
           about={
             "TextUtils is a simple utility tool for text editing made using react and bootstrap"
