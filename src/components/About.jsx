@@ -35,7 +35,7 @@ function About(props) {
           } `}
         >
           <img
-            src="..\assets\cloud.png"
+            src="src\assets\cloud.png"
             alt="cloud"
             className="min-w-[90rem] "
           />
