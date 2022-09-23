@@ -26,7 +26,7 @@ function Navbar(props) {
               } text-2xl overflow-hidden`}
             >
               <img
-                src="src\assets\avatar.webp"
+                src="..\assets\avatar.webp"
                 alt="My Avatar"
                 className="w-36"
               />

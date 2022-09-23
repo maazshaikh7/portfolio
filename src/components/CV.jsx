@@ -15,7 +15,7 @@ function CV() {
       <div className="absolute top-10 right-10 z-10 text-center">
         {/* *** ADD CV PDF USING PRINT WEBSITE*** */}
         <a
-          href="src\assets\cv.pdf"
+          href="..\assets\cv.pdf"
           download={"maaz-cv"}
           className="bx bx-download bg-neutral-100 rounded-full p-1 mb-2"
         ></a>
@@ -26,7 +26,7 @@ function CV() {
         <div className="left relative bg-neutral-800 p-10 text-neutral-100">
           <div className="profileText relative flex flex-col items-center space-y-10 pb-8 border-b-2 border-neutral-500">
             <div className="imgBx relative w-48 h-48 rounded-full overflow-hidden hover:border-8 duration-300 border-neutral-300">
-              <img src="src\assets\avatar.webp" alt="Profile picture" />
+              <img src="..\assets\avatar.webp" alt="Profile picture" />
             </div>
             <h2 className="text-4xl text-center font-semibold hover:tracking-wider duration-500">
               Maaz Shaikh
