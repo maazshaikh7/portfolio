@@ -4,6 +4,7 @@
 
 *{
     font-family: 'Arvo', serif;
+    /* border: 2px solid red; */
 }
 .navLink{
     @apply hover:text-xl rounded-xl hover:text-black duration-300

@@ -1,19 +1,36 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
+import Alert from "./Alert";
 
 function Contact(props) {
-  const form = useRef();
+  const [firstName, setFirstName] = useState();
+  
+  // Alert on form submission
+  let [alert, setAlert] = useState(null);
+  const showAlert = (message, type)=> {
+    setAlert({
+      msg: message,
+      type: type
+    })
+    setTimeout(() => {
+      setAlert(null);
+      window.location.reload(false)
+    }, 4000);
+  }
+  
   // Form validation using react-hook-form
+  const form = useRef();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
+  const onSubmit = () => {
     if (!errors.firstName && !errors.lastName && !errors.email) {
       // Function to send emails via form submission using email-js.com
-      const handleSend = () => {
+      const handleSend = (message, type) => {
+        showAlert(message, type);
         emailjs
           .sendForm(
             "service_xuqz0af",
@@ -25,23 +42,26 @@ function Contact(props) {
             console.log(res);
           })
           .catch((err) => console.log(err));
-      };
-      handleSend();
-    }
-  };
+        };
+        handleSend("Message sent successfully!", "green");
+      }
+      // else if(errors.firstName || errors.lastName || errors.email){
+      //   handleSend("Failed to send message", "red");
+      // }
+    };
 
   return (
     <div
       className={`contact w-auto lg:w-2/3 h-fit ${
         props.mode === "dark" ? "text-neutral-300" : "text-neutral-900"
-      } mx-auto p-10 rounded-xl m-10 duration-700`}
+      } mx-auto rounded-xl m-10 mt-32 duration-700 min-h-screen`}
     >
       <h1 className="text-7xl font-bold text-center">Contact me</h1>
       <form
         onSubmit={handleSubmit(onSubmit)}
         ref={form}
         action="post"
-        className="w-3/4 text-xl font-semibold mx-auto my-20 grid gap-5 grid-cols-2"
+        className="w-3/4 text-xl font-semibold mx-auto mt-20 mb-10 grid gap-5 grid-cols-2"
       >
         <div className="col-span-2 md:col-span-1">
           <label htmlFor="firstName">
@@ -117,6 +137,7 @@ function Contact(props) {
           className="p-2 rounded-2xl w-full bg-neutral-900 col-span-2 mt-10 text-neutral-100 hover:bg-green-700 active:bg-green-400"
         />
       </form>
+        <Alert alert={alert}/>
     </div>
   );
 }
