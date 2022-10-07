@@ -55,7 +55,7 @@ function Portfolio(props) {
           mode={props.mode}
           img={"\\assets\\ms-clone.png"}
           preview={"https://pagenotfound.netlify.app"}
-          code={"https://github.com/maazshaikh7/ms-clone"}
+          code={"https://github.com/maazshaikh7/microsoft-clone"}
           about={"Cloned design of microsoft website as of July 2022 using tailwind-css and react"}
         />
         <Project

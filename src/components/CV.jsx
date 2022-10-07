@@ -13,10 +13,9 @@ function CV() {
         <p className="hidden sm:block text-neutral-300">Home</p>
       </div>
       <div className="absolute top-10 right-10 z-10 text-center">
-        {/* *** ADD CV PDF USING PRINT WEBSITE*** */}
         <a
-          href="\assets\cv.pdf"
-          download={"maaz-cv"}
+          href="\assets\maaz-cv.pdf"
+          download="maaz-cv"
           className="bx bx-download bg-neutral-100 rounded-full p-1 mb-2"
         ></a>
         <br />
@@ -53,8 +52,7 @@ function CV() {
               </li>
               <li>
                 <i className="bx bxl-linkedin text-lg"></i>
-                {/* TODO */}
-                <span className="text">www.linkedin.com/</span>
+                <span className="text">www.linkedin.com/maazshaikh7</span>
               </li>
               <li>
                 <i className="bx bx-current-location text-lg"></i>
@@ -70,7 +68,10 @@ function CV() {
               <li>
                 <div className="text-xs underline pb-2">
                   <p className="inline">2022-2025 </p>
-                  <p className="inline-block group-hover:text-red-500"> &#91; Pursuing &#93;</p>
+                  <p className="inline-block group-hover:text-red-500">
+                    {" "}
+                    &#91; Pursuing &#93;
+                  </p>
                 </div>
                 <h4>Bachelors in Computer Applications &#91; BCA &#93;</h4>
                 <h5 className="text-xs pt-1">
@@ -88,76 +89,11 @@ function CV() {
               <li> Hindi - Native</li>
             </ul>
           </div>
-        </div>
-        <div className="right relative bg-neutral-100 p-10 xl:col-span-2">
-          <div className="about my-10">
-            <h2 className="text-3xl font-semibold hover:tracking-widest duration-300 mb-8">
-              PROFILE
-            </h2>
-            <p>
-            I am a self taught frontend engineer based in Mumbai, India. Over the
-          past year, I have worked on personal and corporate projects using CSS
-          frameworks, react and my photoshop skills. I am always eager to learn
-          new skills and up for challenges!! I can bring innovative ideas to web
-          development and contribute to building a strong team bond and a
-          healthy working envoirnment.
-            </p>
-          </div>
-          <div className="work my-10 pt-5 space-y-5">
-            <h2 className="text-3xl font-semibold hover:tracking-wider duration-300 mb-12">
-              WORK EXPERIENCE
-            </h2>
-            <h4 className="text-2xl">Work 1</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              soluta reiciendis cum fugit minima assumenda ad architecto dolorum
-              dolor. Necessitatibus aliquam accusantium blanditiis similique
-              molestiae, laborum eveniet dolorem exercitationem doloremque
-              magnam. Praesentium, qui dolores!
-            </p>
-            <h4 className="text-2xl">Work 2</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              soluta reiciendis cum fugit minima assumenda ad architecto dolorum
-              dolor. Necessitatibus aliquam accusantium blanditiis similique
-              molestiae, laborum eveniet dolorem exercitationem doloremque
-              magnam. Praesentium, qui dolores!
-            </p>
-            <h4 className="text-2xl">Work 3</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              soluta reiciendis cum fugit minima assumenda ad architecto dolorum
-              dolor. Necessitatibus aliquam accusantium blanditiis similique
-              molestiae, laborum eveniet dolorem exercitationem doloremque
-              magnam. Praesentium, qui dolores!
-            </p>
-            <Link
-              to="/contact"
-              className="block text-blue-500 text-lg hover:underline hover:font-semibold"
-            >
-              Add work +
-            </Link>
-          </div>
-          <div className="skills my-10">
-            <h2 className="text-3xl font-semibold hover:tracking-wider duration-300 mb-8">
-              PROFESSIONAL SKILLS
-            </h2>
-            <ul className="list-disc pl-7 grid grid-cols-2">
-              <li>HTML 5</li>
-              <li>CSS 3</li>
-              <li>JAVASCRIPT</li>
-              <li>REACT JS</li>
-              <li>TAILWIND CSS</li>
-              <li>BOOTSTRAP</li>
-              <li>GIT</li>
-              <li>GITHUB</li>
-            </ul>
-          </div>
           <div className="interests my-10 ">
             <h2 className="text-3xl font-semibold hover:tracking-wider duration-300 mb-12">
               INTERESTS
             </h2>
-            <ul className="flex justify-between flex-wrap text-center lg:w-2/3">
+            <ul className="text-centerlg:w-2/3 space-y-4">
               <li>
                 <i className="bx bxs-game"></i>
                 <p>GAMING</p>
@@ -174,6 +110,144 @@ function CV() {
                 <i className="bx bxs-book-open"></i>
                 <p>READING</p>
               </li>
+            </ul>
+          </div>
+        </div>
+        <div className="right relative bg-neutral-100 p-10 xl:col-span-2">
+          <div className="about my-10">
+            <h2 className="text-3xl font-semibold hover:tracking-widest duration-300 mb-8">
+              PROFILE
+            </h2>
+            <p>
+              I am a self taught frontend engineer based in Mumbai, India. Over
+              the past year, I have worked on personal and corporate projects
+              using CSS frameworks, react and my photoshop skills. I am always
+              eager to learn new skills and up for challenges!! I can bring
+              innovative ideas to web development and contribute to building a
+              strong team bond and a healthy working envoirnment.
+            </p>
+          </div>
+          <div className="work my-10 pt-5 space-y-5">
+            <h2 className="text-3xl font-semibold hover:tracking-wider duration-300 mb-12">
+              WORK EXPERIENCE
+            </h2>
+            <h4 className="text-2xl">
+              FREELANCE
+              <p className=" text-xl inline-block pl-2 "> — UI developer</p>
+            </h4>
+            <i className="-translate-y-5">2021 , MUMBAI</i>
+            <p>
+              Created and managed websites using modern technologies while
+              providing excellent customer service and support. <br />
+              <br />
+              Personally consult clients with design suggestions and hosting
+              recommendations.
+              <br />
+              <br />
+              Create and optimize UI/UX designs to increase overall aesthetic
+              appearance and improve conversion rates
+            </p>
+
+            <Link
+              to="/contact"
+              className="block text-blue-500 text-lg hover:underline hover:font-semibold"
+            >
+              Add work +
+            </Link>
+          </div>
+          <div className="projects my-10 pb-7 pt-5 space-y-5">
+            <h2 className="text-3xl font-semibold hover:tracking-wider duration-300 mb-12">
+              PROJECTS
+            </h2>
+            <ul className="grid gap-5 grid-cols-1 md:grid-cols-2">
+              <li>
+                <a
+                  href="https://maazshaikh.netlify.app/"
+                  className="hover:text-blue-600 underline text-2xl mb-3 block"
+                >
+                  Personal Portfolio
+                </a>
+                <p>
+                  Created and updated a personal portfolio over months of
+                  learning development using react-js and tailwind-css. <br />
+                </p>
+              </li>
+              <li>
+                <a
+                  href="https://newsapp-maazshaikh7.netlify.app"
+                  className="hover:text-blue-600 underline text-2xl mb-3 block"
+                >
+                  News-App
+                </a>
+                <p>
+                  Made a website to display all the breaking news with
+                  categories using News API, bootstrap and react-js. <br />
+                </p>
+              </li>
+              <li>
+                <a
+                  href="https://textutils-maazshaikh7.netlify.app"
+                  className="hover:text-blue-600 underline text-2xl mb-3 block"
+                >
+                  TextUtils
+                </a>
+                <p>
+                  TextUtils is a simple utility tool for text editing made using
+                  react and bootstrap. <br />
+                </p>
+              </li>
+              <li>
+                <a
+                  href="https://maazshaikh7.github.io/Etch-A-Sketch/"
+                  className="hover:text-blue-600 underline text-2xl mb-3 block"
+                >
+                  Etch-A-sketch
+                </a>
+                <p>
+                  A sketchpad on the web, with rgb sketching made using pure
+                  HTML, CSS and Javascript. This was a practice project in 'The
+                  Odin Project' <br />
+                </p>
+              </li>
+              <li>
+                <a
+                  href="https://maazshaikh7.github.io/ToDoList/"
+                  className="hover:text-blue-600 underline text-2xl mb-3 block"
+                >
+                  TODO-List
+                </a>
+                <p>
+                  As the name suggests, a list of things to do, stored in
+                  local-storage made using pure HTML, CSS and Javascript. <br />
+                </p>
+              </li>
+              <li>
+                <a
+                  href=""
+                  className="hover:text-blue-600 underline text-2xl mb-3 block"
+                >
+                  Microsoft-clone
+                </a>
+                <p>
+                  Cloned design of microsoft website as of July 2022 using
+                  tailwind-css and react <br />
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div className="skills my-10">
+            <h2 className="text-3xl font-semibold hover:tracking-wider duration-300 mb-8">
+              PROFESSIONAL SKILLS
+            </h2>
+            <ul className="list-disc pl-7 grid grid-cols-2">
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>JAVASCRIPT</li>
+              <li>REACT JS</li>
+              <li>TAILWIND CSS</li>
+              <li>BOOTSTRAP</li>
+              <li>GIT</li>
+              <li>GITHUB</li>
             </ul>
           </div>
         </div>

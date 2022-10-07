@@ -82,8 +82,7 @@ function Navbar(props) {
                 <a className="bx bxl-github cursor-pointer hover:text-4xl" href="https://github.com/maazshaikh7" target="_blank"></a>
               </li>
               <li>
-                {/* TODO */}
-                <a className="bx bxl-linkedin cursor-pointer hover:text-4xl" href="https://linkedin.com" target="_blank"></a>
+                <a className="bx bxl-linkedin cursor-pointer hover:text-4xl" href="https://www.linkedin.com/in/maazshaikh7" target="_blank"></a>
               </li>
             </ul>
           </ul>
