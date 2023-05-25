@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -9,18 +9,7 @@ import Skills from "./components/Skills";
 import CV from "./components/CV";
 
 function App() {
-  // Parallax effect
-  const [offset, setOffset] = useState(0);
-
-  useEffect(() => {
-    const onScroll = () => setOffset(window.pageYOffset);
-    // clean up code
-    window.removeEventListener("scroll", onScroll);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  // console.log(offset);
+  //TODO Parallax effect
 
   // On hamburger menu toggle
   const [navDisplay, setNavDisplay] = useState(false);
@@ -40,6 +29,11 @@ function App() {
       "linear-gradient(to top, black, midnightblue, slateblue)";
   }
 
+  const UIProps = {
+    mode: mode,
+    navDisplay: navDisplay,
+  };
+
   return (
     <>
       <Routes>
@@ -48,16 +42,15 @@ function App() {
           element={
             <>
               <Navbar
-                mode={mode}
+                {...UIProps}
                 toggleMode={toggleMode}
-                navDisplay={navDisplay}
                 toggleNav={toggleNav}
               />
-              <Home mode={mode} navDisplay={navDisplay} />{" "}
-              <About mode={mode} navDisplay={navDisplay} />
-              <Portfolio mode={mode} navDisplay={navDisplay} />
-              <Skills mode={mode} navDisplay={navDisplay} />
-              <Contact mode={mode} navDisplay={navDisplay} />
+              <Home {...UIProps} />
+              <About {...UIProps} />
+              <Portfolio {...UIProps} />
+              <Skills {...UIProps} />
+              <Contact {...UIProps} />
             </>
           }
         />
@@ -66,12 +59,11 @@ function App() {
           element={
             <>
               <Navbar
-                mode={mode}
                 toggleMode={toggleMode}
-                navDisplay={navDisplay}
+                {...UIProps}
                 toggleNav={toggleNav}
               />
-              <About mode={mode} navDisplay={navDisplay} style="fixed" />
+              <About {...UIProps} style="fixed" />
             </>
           }
         />
@@ -81,12 +73,11 @@ function App() {
             <>
               {" "}
               <Navbar
-                mode={mode}
+                {...UIProps}
                 toggleMode={toggleMode}
-                navDisplay={navDisplay}
                 toggleNav={toggleNav}
               />
-              <Portfolio mode={mode} navDisplay={navDisplay} />
+              <Portfolio {...UIProps} />
             </>
           }
         />
@@ -95,9 +86,8 @@ function App() {
           element={
             <>
               <Navbar
-                mode={mode}
+                {...UIProps}
                 toggleMode={toggleMode}
-                navDisplay={navDisplay}
                 toggleNav={toggleNav}
               />{" "}
               <Skills mode={mode} navDisplay={navDisplay} />
@@ -109,19 +99,15 @@ function App() {
           element={
             <>
               <Navbar
-                mode={mode}
                 toggleMode={toggleMode}
-                navDisplay={navDisplay}
+                {...UIProps}
                 toggleNav={toggleNav}
               />
-              <Contact mode={mode} navDisplay={navDisplay} />
+              <Contact {...UIProps} />
             </>
           }
         />
-        <Route
-          path="/cv"
-          element={<CV mode={mode} navDisplay={navDisplay} />}
-        />
+        <Route path="/cv" element={<CV {...UIProps} />} />
       </Routes>
     </>
   );

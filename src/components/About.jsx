@@ -15,8 +15,8 @@ function About(props) {
         }`}
       >
         <div className="translate-y-12 text-center lg:text-left">
-          <h1 className="font-bold text-7xl pb-3 -z-10">About me</h1>
-          <p className="text-xl -z-10">
+          <h1 className="font-bold text-5xl pb-3 -z-10">About me</h1>
+          <p className="text-lg -z-10">
             I am a self taught frontend engineer based in Mumbai, India. Over
             the past year, I have worked on personal and corporate projects
             using CSS frameworks, react and my photoshop skills. I am always
@@ -34,11 +34,7 @@ function About(props) {
             props.navDisplay === true ? "-translate-x-2/3" : ""
           } `}
         >
-          <img
-            src="\assets\cloud.png"
-            alt="cloud"
-            className="min-w-[90rem] "
-          />
+          <img src="\assets\cloud.png" alt="cloud" className="min-w-[90rem] " />
         </div>
         <div
           className={`relative hidden lg:block -top-[100vh] left-[100vh] ${

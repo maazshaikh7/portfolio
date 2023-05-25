@@ -5,44 +5,37 @@ function Navbar(props) {
   return (
     <>
       <nav
-        className={`fixed pt-8 w-2/3 md:w-1/2 top-0 lg:w-1/3 xl:w-1/3 rounded-r-xl bg-gradient-to-tr ${
+        className={`fixed  pt-8 w-2/3 md:w-1/2 top-0 lg:hidden rounded-r-xl bg-gradient-to-tr ${
           props.mode == "light"
             ? "from-blue-500 to-cyan-100"
             : "from-blue-900 to-violet-900 "
-        } min-h-screen overflow-hidden duration-700 z-10 ${
+        } min-h-full overflow-hidden duration-700 z-10 ${
           props.navDisplay ? "" : "-translate-x-full"
         }`}
       >
-        <div className="container mx-6">
-          <div
-            className={`shape w-52 h-52 rounded-full absolute -top-8 -left-8 ${
-              props.mode === "light" ? "bg-sky-200" : "bg-blue-900"
-            } blur-3xl`}
-          ></div>
-          <div className="data relative py-5 md:py-14 mx-10">
+        <div className="container">
+          <div className="data relative py-4 md:py-14 mx-10">
             <div
-              className={`mask sm:flex justify-center items-end ${
+              className={`mask justify-center items-end ${
                 props.mode === "light" ? "text-sky-900" : "text-cyan-200"
-              } text-2xl overflow-hidden`}
+              } text-lg overflow-hidden`}
             >
               <img
                 src="\assets\avatar.webp"
                 alt="My Avatar"
-                className="w-36"
+                className="mx-auto w-28 pt-10"
               />
-              <div className="greeting p-6">
-                Hi, I'm
-                <h1 className="name text-4xl font-bold">
-                  Maaz <br />
-                  Shaikh
-                </h1>
-              </div>
+
+              <h1 className="name text-2xl pt-5 text-center font-bold">
+                Maaz <br />
+                Shaikh
+              </h1>
             </div>
           </div>
           <ul
-            className={`navlist font-bold text-lg ${
+            className={`navlist font-bold text-sm ${
               props.mode === "light" ? "text-sky-900" : "text-cyan-200"
-            } list-none px-32 mt-16 flex flex-col -translate-x-14 text-center space-y-7`}
+            } list-none w-18 mt-8 flex flex-col  text-center space-y-7`}
           >
             <li className="navItem">
               <Link to="/" className="navLink">
@@ -76,13 +69,25 @@ function Navbar(props) {
             </li>
             <ul className="socials flex justify-center p-7">
               <li>
-                <a className="bx bxl-facebook cursor-pointer hover:text-4xl" href="https://www.facebook.com/profile.php?id=100071131632511" target="_blank"></a>
+                <a
+                  className="bx bxl-facebook cursor-pointer hover:text-3xl"
+                  href="https://www.facebook.com/profile.php?id=100071131632511"
+                  target="_blank"
+                ></a>
               </li>
               <li>
-                <a className="bx bxl-github cursor-pointer hover:text-4xl" href="https://github.com/maazshaikh7" target="_blank"></a>
+                <a
+                  className="bx bxl-github cursor-pointer hover:text-3xl"
+                  href="https://github.com/maazshaikh7"
+                  target="_blank"
+                ></a>
               </li>
               <li>
-                <a className="bx bxl-linkedin cursor-pointer hover:text-4xl" href="https://www.linkedin.com/in/maazshaikh7" target="_blank"></a>
+                <a
+                  className="bx bxl-linkedin cursor-pointer hover:text-3xl"
+                  href="https://www.linkedin.com/in/maazshaikh7"
+                  target="_blank"
+                ></a>
               </li>
             </ul>
           </ul>
@@ -93,7 +98,7 @@ function Navbar(props) {
           onClick={props.toggleNav}
           className={`bx ${
             props.mode === "dark" ? "text-white" : ""
-          } text-4xl duration-700 ${props.navDisplay ? "bx-x" : "bx-menu"}`}
+          } text-3xl duration-700 ${props.navDisplay ? "bx-x" : "bx-menu"}`}
         ></i>
       </div>
 
@@ -113,7 +118,7 @@ function Navbar(props) {
           props.mode === "dark" ? "text-white" : ""
         }`}
       >
-        <i className="bx text-5xl bxs-notepad"></i>
+        <i className="bx text-4xl bxs-notepad"></i>
         <p className="font-bold pl-3">CV</p>
       </Link>
     </>

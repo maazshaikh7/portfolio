@@ -4,22 +4,9 @@ import { Link } from "react-router-dom";
 function Home(props) {
   return (
     <>
-      <div className="fill w-screen h-screen -z-50 grid place-items-center">
-        <Link to="/contact">
-          <button className={`p-3 ${
-          props.navDisplay === true
-            ? "-translate-x-[100vh] bg-transparent"
-            : "xl:-translate-x-52 "
-        } text-lg my-5 lg:my-2 duration-[2500ms] translate-y-60 rounded-full lg:translate-y-52 xl:translate-y-28 bg-cyan-200 hover:bg-indigo-500 hover:border-2 active:border-0  font-semibold`}>
-            Contact me
-          </button>
-        </Link>
-      </div>
       <main
-        className={`absolute top-1/4 duration-[2500ms] right-[5%] -z-10 ${
-          props.navDisplay === false
-            ? "xl:-translate-x-80 "
-            : "-translate-y-[100vh]"
+        className={`duration-[2500ms] -z-10 grid place-items-center h-screen ${
+          props.navDisplay === false ? " " : "-translate-y-[100vh]"
         } `}
       >
         <img
@@ -28,11 +15,7 @@ function Home(props) {
           className="h-[32rem] opacity-50 hidden lg:block"
         />
         <div
-          className={`details lg:absolute m-8 md:m-20 lg:m-0 top-36 duration-700 right-1/4 font-semibold ${
-            props.mode === "dark"
-              ? "from-blue-900 to-violet-900"
-              : "from-blue-500 to-cyan-100"
-          } rounded-3xl p-3 lg:bg-none lg:p-0 bg-gradient-to-tr ${
+          className={`details lg:absolute top-auto duration-700 font-semibold ${
             props.navDisplay === true ? "lg:hidden sm:translate-x-0" : ""
           } `}
         >
@@ -41,15 +24,26 @@ function Home(props) {
               props.mode === "dark" ? "text-cyan-100" : "text-neutral-900"
             } `}
           >
-            <p className="text-2xl my-1 lg:m-0">Hi, I'm,</p>
-            <h1 className="text-7xl font-sans my-1 lg:m-0">Maaz Shaikh</h1>
-            <h3 className="text-3xl my-1 lg:m-0">
+            <p className="text-xl my-1 ">Hi, I'm,</p>
+            <h1 className="text-5xl font-sans my-1">Maaz Shaikh</h1>
+            <h3 className="text-2xl my-1 ">
               Frontend Developer | UI/UX Designer
             </h3>
+            <Link to="/contact">
+              <button
+                className={`p-3 ${
+                  props.navDisplay === true
+                    ? "-translate-x-[100vh] bg-transparent"
+                    : " "
+                } text-md mt-5 rounded-full border-2 border-neutral-800 hover:border-2 hover:border-sky-300 font-semibold`}
+              >
+                Contact me
+              </button>
+            </Link>
           </div>
         </div>
       </main>
-      <img
+      {/* <img
         src="\assets\sun.png"
         alt="sun"
         className={`sun/moon hidden md:block w-72 absolute top-3 right-2 duration-1000 ${
@@ -62,7 +56,7 @@ function Home(props) {
         className={`sun/moon hidden md:block w-40 absolute top-3 right-2 duration-1000 ${
           props.mode === "light" ? "translate-x-40" : ""
         }`}
-      />
+      /> */}
     </>
   );
 }
