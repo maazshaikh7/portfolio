@@ -6,9 +6,9 @@ function Portfolio(props) {
     <div
       className={`${
         props.mode === "dark" ? "text-cyan-100" : "text-neutral-900"
-      } py-12 lg:py-0`}
+      } py-12 my-auto`}
     >
-      <h1 className="text-5xl font-bold my-28 text-center">My projects</h1>
+      <h1 className="text-4xl font-bold my-28 text-center">My projects</h1>
       <div className="projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-2/3 mx-auto my-40">
         <Project
           projectName={"NEWS-MONKEY"}

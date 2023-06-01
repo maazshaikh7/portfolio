@@ -93,7 +93,7 @@ function Navbar(props) {
           </ul>
         </div>
       </nav>
-      <div className="close fixed top-5 left-5 inline-flex cursor-pointer mb-16 font-bold z-10 ">
+      <div className="close lg:hidden fixed top-5 left-5 inline-flex cursor-pointer mb-16 font-bold z-10 ">
         <i
           onClick={props.toggleNav}
           className={`bx ${
@@ -118,8 +118,8 @@ function Navbar(props) {
           props.mode === "dark" ? "text-white" : ""
         }`}
       >
-        <i className="bx text-4xl bxs-notepad"></i>
-        <p className="font-bold pl-3">CV</p>
+        <i className="bx text-3xl bxs-notepad p-0"></i>
+        <p className="font-bold text-sm text-center">CV</p>
       </Link>
     </>
   );

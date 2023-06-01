@@ -5,20 +5,16 @@ function Home(props) {
   return (
     <>
       <main
-        className={`duration-[2500ms] -z-10 grid place-items-center h-screen ${
+        className={`duration-[2500ms] md:animate-float -z-10 grid place-items-center h-screen ${
           props.navDisplay === false ? " " : "-translate-y-[100vh]"
         } `}
       >
         <img
           src="\assets\cloud.png"
           alt="cloud"
-          className="h-[32rem] opacity-50 hidden lg:block"
+          className="w-full lg:w-4/5 xl:w-2/3  opacity-50 hidden md:block "
         />
-        <div
-          className={`details lg:absolute top-auto duration-700 font-semibold ${
-            props.navDisplay === true ? "lg:hidden sm:translate-x-0" : ""
-          } `}
-        >
+        <div className="details md:absolute top-auto px-10 duration-700 font-semibold">
           <div
             className={`${
               props.mode === "dark" ? "text-cyan-100" : "text-neutral-900"
@@ -31,11 +27,7 @@ function Home(props) {
             </h3>
             <Link to="/contact">
               <button
-                className={`p-3 ${
-                  props.navDisplay === true
-                    ? "-translate-x-[100vh] bg-transparent"
-                    : " "
-                } text-md mt-5 rounded-full border-2 border-neutral-800 hover:border-2 hover:border-sky-300 font-semibold`}
+                className={`p-3 text-md mt-5 rounded-full border-2 border-neutral-800 hover:border-2 hover:border-sky-300 font-semibold`}
               >
                 Contact me
               </button>
@@ -43,20 +35,20 @@ function Home(props) {
           </div>
         </div>
       </main>
-      {/* <img
+      <img
         src="\assets\sun.png"
         alt="sun"
-        className={`sun/moon hidden md:block w-72 absolute top-3 right-2 duration-1000 ${
-          props.mode === "dark" ? "-translate-y-72" : ""
+        className={`sun hidden md:block w-72 absolute top-3 right-2 duration-1000 ${
+          props.mode === "dark" ? "-translate-y-72 animate-fade-out" : ""
         }`}
       />
       <img
         src="\assets\moon.png"
         alt="moon"
-        className={`sun/moon hidden md:block w-40 absolute top-3 right-2 duration-1000 ${
-          props.mode === "light" ? "translate-x-40" : ""
+        className={`moon hidden md:block w-40 absolute top-3 right-2 duration-1000 ${
+          props.mode === "light" ? "-translate-y-80 animate-fade-out" : ""
         }`}
-      /> */}
+      />
     </>
   );
 }

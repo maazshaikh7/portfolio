@@ -17,6 +17,7 @@ function App() {
     navDisplay ? setNavDisplay(false) : setNavDisplay(true);
   };
 
+  // Set theme
   const [mode, setMode] = useState("light");
   const toggleMode = () => {
     mode === "dark" ? setMode("light") : setMode("dark");
@@ -26,9 +27,10 @@ function App() {
       "linear-gradient(to left, lightskyblue, dodgerblue)";
   } else if (mode === "dark") {
     document.body.style.backgroundImage =
-      "linear-gradient(to top, black, midnightblue, slateblue)";
+      "linear-gradient(250deg, darkslateblue , midnightblue, indigo )";
   }
 
+  // Destructuring
   const UIProps = {
     mode: mode,
     navDisplay: navDisplay,
