@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -18,17 +18,29 @@ function App() {
   };
 
   // Set theme
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState(() => {
+    const savedMode = localStorage.getItem("mode");
+    return savedMode || "light";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("mode", mode);
+    if (mode === "light") {
+      document.body.style.backgroundImage =
+        "linear-gradient(to left, lightskyblue, dodgerblue)";
+    } else {
+      document.body.style.backgroundImage =
+        "linear-gradient(250deg, darkslateblue , midnightblue, indigo )";
+    }
+  }, [mode]);
+
   const toggleMode = () => {
-    mode === "dark" ? setMode("light") : setMode("dark");
+    if (mode === "light") {
+      setMode("dark");
+    } else {
+      setMode("light");
+    }
   };
-  if (mode === "light") {
-    document.body.style.backgroundImage =
-      "linear-gradient(to left, lightskyblue, dodgerblue)";
-  } else if (mode === "dark") {
-    document.body.style.backgroundImage =
-      "linear-gradient(250deg, darkslateblue , midnightblue, indigo )";
-  }
 
   // Destructuring
   const UIProps = {

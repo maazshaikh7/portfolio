@@ -14,7 +14,7 @@ function About(props) {
           props.navDisplay === true ? "-translate-x-2/3 " : ""
         }`}
       >
-        <div className="text-center lg:text-left m-10 p-5 md:p-10">
+        <div className="text-center lg:text-left m-10 p-5  md:pl-20">
           <h1 className="font-bold text-5xl pb-12 -z-10">About me</h1>
           <p className="text-lg -z-10">
             I am a self taught frontend engineer based in Mumbai, India. Over

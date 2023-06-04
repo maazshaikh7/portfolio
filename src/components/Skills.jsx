@@ -4,11 +4,11 @@ function Skills(props) {
   return (
     <>
       <div
-        className={`min-h-screen py-20 ${
+        className={`min-h-screen py-10 ${
           props.mode === "dark" ? "text-cyan-100" : "text-neutral-900"
         } `}
       >
-        <h1 className="text-5xl font-bold my-28 lg:pb-28 text-center">
+        <h1 className="text-4xl font-bold my-28 lg:pb-18 text-center">
           My Skills
         </h1>
         <ul className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center text-xl text-neutral-100 border-2 shadow-xl shadow-neutral-700 font-semibold w-1/2 mx-auto bg-neutral-900 rounded-xl p-10 mb-28 ">

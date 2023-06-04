@@ -11,13 +11,13 @@ function Portfolio(props) {
       <h1 className="text-4xl font-bold my-28 text-center">My projects</h1>
       <div className="projects grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-2/3 mx-auto my-40">
         <Project
-          projectName={"NEWS-MONKEY"}
+          projectName={"SHADOW-KEYS"}
           mode={props.mode}
-          img={"\\assets\\newsapp.png"}
-          preview={"https://newsapp-maazshaikh7.netlify.app"}
-          code={"https://github.com/maazshaikh7/newsapp"}
+          img={"\\assets\\shadowkeys.png"}
+          preview={"https://shadowkeys.netlify.app"}
+          code={"https://github.com/maazshaikh7/shadow-keys"}
           about={
-            "NewsApp shows all the breaking news at one place using NEWS API, react and bootstrap"
+            "Made using react and typescript for practicing touch typing and increasing typing speed."
           }
         />
         <Project
@@ -40,7 +40,7 @@ function Portfolio(props) {
             "A sketchpad on web with rgb sketching made using pure HTML, CSS and Javscript"
           }
         />
-        <Project
+        {/* <Project
           projectName={"ODIN-CALCULATOR"}
           mode={props.mode}
           img={"\\assets\\odin-calculator.png"}
@@ -49,14 +49,6 @@ function Portfolio(props) {
           about={
             "'The odin project' basic calculator remade using tailwind-css and javascript"
           }
-        />
-        {/* <Project
-          projectName={"SWIFT-TYPE"}
-          mode={props.mode}
-          img={""}
-          preview={""}
-          code={"https://github.com/maazshaikh7/swift-type"}
-          about={""}
         /> */}
         <Project
           projectName={"MICROSOFT CLONE"}
@@ -66,6 +58,16 @@ function Portfolio(props) {
           code={"https://github.com/maazshaikh7/microsoft-clone"}
           about={
             "Cloned design of microsoft website as of July 2022 using tailwind-css and react"
+          }
+        />
+        <Project
+          projectName={"NEWS-MONKEY"}
+          mode={props.mode}
+          img={"\\assets\\newsapp.png"}
+          preview={"https://newsapp-maazshaikh7.netlify.app"}
+          code={"https://github.com/maazshaikh7/newsapp"}
+          about={
+            "NewsApp shows all the breaking news at one place using NEWS API, react and bootstrap"
           }
         />
         <Project

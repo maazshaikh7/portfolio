@@ -5,11 +5,11 @@ function Navbar(props) {
   return (
     <>
       <nav
-        className={`fixed  pt-8 lg:p-0 lg:m-0 w-2/3 md:w-1/2 lg:w-min top-0 lg:top-[17vh] lg:left-0 rounded-r-xl bg-gradient-to-tr ${
+        className={`fixed pt-8 lg:p-0 lg:m-0 w-2/3 md:w-1/2 lg:w-min top-0 lg:top-1/2 lg:-translate-y-1/2 lg:left-0 rounded-r-xl bg-gradient-to-tr ${
           props.mode == "light"
             ? "from-blue-500 to-cyan-100"
             : "from-blue-900 to-violet-900 "
-        } min-h-full lg:min-h-0 lg:h-2/3 lg:flex lg:items-center overflow-hidden duration-700 z-10 ${
+        } min-h-full lg:min-h-0 lg:max-h-2/3 lg:flex lg:items-center overflow-hidden duration-700 z-10 ${
           props.navDisplay ? "" : "-translate-x-full lg:translate-x-0"
         }`}
       >
@@ -35,7 +35,7 @@ function Navbar(props) {
           <ul
             className={`navlist font-bold text-sm ${
               props.mode === "light" ? "text-sky-900" : "text-cyan-200"
-            } list-none w-18 mt-8 lg:m-4 lg:p-0  flex flex-col  text-center lg:text-left space-y-7`}
+            } list-none w-18  mt-8 lg:m-4 lg:p-0  flex flex-col  text-center space-y-7`}
           >
             <li className="navItem">
               <Link to="/" className="navLink">
