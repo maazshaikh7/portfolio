@@ -27,41 +27,41 @@ function CV() {
             <div className="imgBx relative w-48 h-48 rounded-full overflow-hidden hover:border-8 duration-300 border-neutral-300">
               <img src="\assets\avatar.webp" alt="Profile picture" />
             </div>
-            <h2 className="text-4xl text-center font-semibold hover:tracking-wider duration-500">
+            <h2 className="text-3xl text-center font-semibold hover:tracking-wider duration-500">
               Maaz Shaikh
               <br />
-              <span className="text-xl font-extralight ">Web developer</span>
+              <span className="text-lg font-extralight ">Web developer</span>
             </h2>
           </div>
           <div className="contactInfo pt-16">
-            <h3 className="text-2xl font-semibold tracking-wider hover:tracking-widest duration-300 mb-8">
+            <h3 className="text-xl font-semibold tracking-wider hover:tracking-widest duration-300 mb-8">
               CONTACT INFO
             </h3>
             <ul className="space-y-3 ulul text-neutral-300">
               <li>
-                <i className="bx bx-phone text-lg"></i>
+                <i className="bx bx-phone text-md"></i>
                 <span className="text">+91 740 0064 559</span>
               </li>
               <li>
-                <i className="bx bxl-gmail text-lg"></i>
+                <i className="bx bxl-gmail text-md"></i>
                 <span className="text">maazshaikh4559@gmail.com</span>
               </li>
               <li>
-                <i className="bx bx-globe text-lg"></i>
-                <span className="text">www.maazshaikh.com</span>
+                <i className="bx bx-globe text-md"></i>
+                <span className="text">www.maazshaikh.netlify.app</span>
               </li>
               <li>
-                <i className="bx bxl-linkedin text-lg"></i>
+                <i className="bx bxl-linkedin text-md"></i>
                 <span className="text">www.linkedin.com/maazshaikh7</span>
               </li>
               <li>
-                <i className="bx bx-current-location text-lg"></i>
+                <i className="bx bx-current-location text-md"></i>
                 <span className="text">Mumbai, Maharashtra, India</span>
               </li>
             </ul>
           </div>
           <div className="education pt-16">
-            <h3 className="text-2xl font-semibold tracking-wider hover:tracking-widest duration-300 mb-8">
+            <h3 className="text-xl font-semibold tracking-wider hover:tracking-widest duration-300 mb-8">
               EDUCATION
             </h3>
             <ul className="space-y-3 text-neutral-300 hover:text-white group">
@@ -81,7 +81,7 @@ function CV() {
             </ul>
           </div>
           <div className="languages pt-16">
-            <h3 className="text-2xl font-semibold tracking-wider hover:tracking-widest duration-300 mb-8">
+            <h3 className="text-xl font-semibold tracking-wider hover:tracking-widest duration-300 mb-8">
               LANGUAGES
             </h3>
             <ul className="space-y-3 text-neutral-300 hover:text-white">
@@ -90,10 +90,10 @@ function CV() {
             </ul>
           </div>
           <div className="interests my-10 ">
-            <h2 className="text-3xl font-semibold hover:tracking-wider duration-300 mb-12">
+            <h2 className="text-xl font-semibold hover:tracking-wider duration-300 mb-12">
               INTERESTS
             </h2>
-            <ul className="text-centerlg:w-2/3 space-y-4">
+            <ul className="text-centerlg:w-2/3 space-y-4 text-sm">
               <li>
                 <i className="bx bxs-game"></i>
                 <p>GAMING</p>
@@ -115,7 +115,7 @@ function CV() {
         </div>
         <div className="right relative bg-neutral-100 p-10 xl:col-span-2">
           <div className="about my-10">
-            <h2 className="text-3xl font-semibold hover:tracking-widest duration-300 mb-8">
+            <h2 className="text-2xl font-semibold hover:tracking-widest duration-300 mb-8">
               PROFILE
             </h2>
             <p>
@@ -128,12 +128,12 @@ function CV() {
             </p>
           </div>
           <div className="work my-10 pt-5 space-y-5">
-            <h2 className="text-3xl font-semibold hover:tracking-wider duration-300 mb-12">
+            <h2 className="text-2xl font-semibold hover:tracking-wider duration-300 mb-12">
               WORK EXPERIENCE
             </h2>
             <h4 className="text-2xl">
               FREELANCE
-              <p className=" text-xl inline-block pl-2 "> — UI developer</p>
+              <p className=" text-md inline-block pl-2 "> — UI developer</p>
             </h4>
             <i className="-translate-y-5">2021 , MUMBAI</i>
             <p>
@@ -156,14 +156,14 @@ function CV() {
             </Link>
           </div>
           <div className="projects my-10 pb-7 pt-5 space-y-5">
-            <h2 className="text-3xl font-semibold hover:tracking-wider duration-300 mb-12">
+            <h2 className="text-2xl font-semibold hover:tracking-wider duration-300 mb-12">
               PROJECTS
             </h2>
             <ul className="grid gap-5 grid-cols-1 md:grid-cols-2">
               <li>
                 <a
                   href="https://maazshaikh.netlify.app/"
-                  className="hover:text-blue-600 underline text-2xl mb-3 block"
+                  className="hover:text-blue-600 underline text-xl mb-3 block"
                 >
                   Personal Portfolio
                 </a>
@@ -174,20 +174,20 @@ function CV() {
               </li>
               <li>
                 <a
-                  href="https://newsapp-maazshaikh7.netlify.app"
-                  className="hover:text-blue-600 underline text-2xl mb-3 block"
+                  href="https://shadowkeys.netlify.app"
+                  className="hover:text-blue-600 underline text-xl mb-3 block"
                 >
-                  News-App
+                  Shadow Keys
                 </a>
                 <p>
-                  Made a website to display all the breaking news with
-                  categories using News API, bootstrap and react-js. <br />
+                  Made using react and typescript for practicing touch typing
+                  and increasing typing speed. <br />
                 </p>
               </li>
               <li>
                 <a
                   href="https://textutils-maazshaikh7.netlify.app"
-                  className="hover:text-blue-600 underline text-2xl mb-3 block"
+                  className="hover:text-blue-600 underline text-xl mb-3 block"
                 >
                   TextUtils
                 </a>
@@ -199,7 +199,7 @@ function CV() {
               <li>
                 <a
                   href="https://maazshaikh7.github.io/Etch-A-Sketch/"
-                  className="hover:text-blue-600 underline text-2xl mb-3 block"
+                  className="hover:text-blue-600 underline text-xl mb-3 block"
                 >
                   Etch-A-sketch
                 </a>
@@ -212,7 +212,7 @@ function CV() {
               <li>
                 <a
                   href="https://maazshaikh7.github.io/ToDoList/"
-                  className="hover:text-blue-600 underline text-2xl mb-3 block"
+                  className="hover:text-blue-600 underline text-xl mb-3 block"
                 >
                   TODO-List
                 </a>
@@ -224,7 +224,7 @@ function CV() {
               <li>
                 <a
                   href=""
-                  className="hover:text-blue-600 underline text-2xl mb-3 block"
+                  className="hover:text-blue-600 underline text-xl mb-3 block"
                 >
                   Microsoft-clone
                 </a>
@@ -236,18 +236,22 @@ function CV() {
             </ul>
           </div>
           <div className="skills my-10">
-            <h2 className="text-3xl font-semibold hover:tracking-wider duration-300 mb-8">
+            <h2 className="text-2xl font-semibold hover:tracking-wider duration-300 mb-8">
               PROFESSIONAL SKILLS
             </h2>
             <ul className="list-disc pl-7 grid grid-cols-2">
               <li>HTML 5</li>
               <li>CSS 3</li>
               <li>JAVASCRIPT</li>
+              <li>TYPESCRIPT</li>
               <li>REACT JS</li>
               <li>TAILWIND CSS</li>
               <li>BOOTSTRAP</li>
+              <li>NODEJS</li>
               <li>GIT</li>
               <li>GITHUB</li>
+              <li>JEST</li>
+              <li>RESPONSIVE DESIGN</li>
             </ul>
           </div>
         </div>
