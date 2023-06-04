@@ -25,18 +25,9 @@ function About(props) {
             strong team bond and a healthy working envoirnment.
           </p>
         </div>
-        {/* <div
-        className={`opacity-50 hidden relative ${
-          props.style === "fixed" ? "top-28" : "-top-96 right-80"
-        } lg:block duration-[2500ms] -z-20 ${
-          props.navDisplay === true ? "-translate-x-2/3" : ""
-        } `}
-      >
-        <img src="\assets\clouds.png" alt="cloud" className="" />
-      </div> */}
       </div>
       <div
-        className={`hidden md:inline-block w-1/3 ${
+        className={`hidden md:inline-block md:animate-float w-1/3 ${
           props.mode === "dark" ? "invert-[10%]" : ""
         }`}
       >
