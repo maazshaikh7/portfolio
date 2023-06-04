@@ -1,23 +1,24 @@
-
 @tailwind base;
 @tailwind components;
 
-*{
-    font-family: 'Arvo', serif;
-    /* border: 2px solid red; */
+* {
+  font-family: "Arvo", serif;
+  /* border: 2px solid red; */
 }
-.navLink{
-    @apply hover:text-xl rounded-xl hover:text-black duration-300
+
+.navLink {
+  @apply hover:text-lg lg:hover:text-lg rounded-xl hover:text-black duration-300;
 }
-.bx{
-    @apply text-3xl pr-2 translate-y-1 hover:opacity-75 duration-100
+.bx {
+  @apply text-2xl pr-2 lg:p-0 translate-y-1 hover:opacity-75 duration-100;
 }
 @tailwind utilities;
 
-.ulul li{
-    @apply hover:underline
+.ulul li {
+  @apply hover:underline;
 }
 
-input, textarea{
-    @apply hover:border-sky-700 border-2
+input,
+textarea {
+  @apply hover:border-sky-700 border-2;
 }
