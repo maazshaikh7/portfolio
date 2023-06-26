@@ -13,51 +13,51 @@ function Skills(props) {
         </h1>
         <ul className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center text-md text-neutral-100 border-2 shadow-xl shadow-neutral-700 font-semibold w-1/2 mx-auto bg-neutral-900 rounded-xl p-10 mb-28 ">
           <li className="text-center w-16">
-            <img src="\assets\html.webp" alt="HTML icon" /> <p>Html 5</p>
+            <img src="\assets\html.webp" alt="HTML logo" /> <p>Html 5</p>
           </li>
           <li className="text-center w-16">
-            <img src="\assets\css.png" alt="CSS icon" /> <p>CSS 3</p>
+            <img src="\assets\css.png" alt="CSS logo" /> <p>CSS 3</p>
           </li>
           <li className="text-center w-16">
-            <img src="\assets\js.png" alt="Javascript icon" /> <p>JavaScript</p>
+            <img src="\assets\js.png" alt="Javascript logo" /> <p>JavaScript</p>
           </li>
           <li className="text-center w-16">
-            <img src="\assets\react.png" alt="React js icon" />
+            <img src="\assets\react.png" alt="React js logo" />
             <p>React JS</p>
           </li>
           <li className="text-center w-16">
-            <img src="\assets\typescript.png" alt="Typescript icon" />
+            <img src="\assets\typescript.png" alt="Typescript logo" />
             <p>Typescript</p>
           </li>
           <li className="text-center w-16">
-            <img src="\assets\bootstrap.png" alt="Bootstrap icon" />
+            <img src="\assets\bootstrap.png" alt="Bootstrap logo" />
             <p>Bootstrap</p>
           </li>
           <li className="text-center w-16">
-            <img src="\assets\tailwind.png" alt="Tailwind CSS icon" />
+            <img src="\assets\tailwind.png" alt="Tailwind CSS logo" />
             <p>Tailwind CSS</p>
           </li>
           <li className="text-center w-16">
-            <img src="\assets\git.png" alt="Git icon" />
+            <img src="\assets\git.png" alt="Git logo" />
             <p>Git</p>
           </li>
           <li className="text-center w-16">
-            <img src="/assets/jest.svg" alt="Jest icon" />
+            <img src="/assets/jest.svg" alt="Jest logo" />
             <p>Jest</p>
           </li>
           <li className="text-center w-16">
-            <img src="\assets\responsive.jpeg" alt="Responsive Design icon" />
-            <p>Responsive Design</p>
+            <img src="\assets\sass.png" alt="Sass logo" />
+            <p>Sass</p>
           </li>
           <li className="text-center w-16">
-            <img src="\assets\nodejs.png" alt="Git icon" />
+            <img src="\assets\nodejs.png" alt="Git logo" />
             <p>NodeJS</p>
           </li>
           <li className="text-center w-16">
             <img
               className="invert"
               src="\assets\github.png"
-              alt="github icon"
+              alt="github logo"
             />
             <p>Github</p>
           </li>
