@@ -5,7 +5,26 @@
   font-family: "Arvo", serif;
   /* border: 2px solid red; */
 }
+body {
+  overflow: hidden;
+}
+.light-theme {
+  background-image: linear-gradient(
+    to left,
+    lightskyblue,
+    lightskyblue,
+    dodgerblue
+  );
+}
 
+.dark-theme {
+  background-image: linear-gradient(
+    250deg,
+    darkslateblue,
+    midnightblue,
+    indigo
+  );
+}
 .navLink {
   @apply hover:text-black duration-200;
 }

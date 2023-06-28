@@ -8,14 +8,14 @@ import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import CV from "./components/CV";
 import Footer from "./components/Footer";
+import CloudAnimation from "./components/CloudAnimation";
 
 function App() {
   //TODO Parallax effect
-
   // On hamburger menu toggle
   const [navDisplay, setNavDisplay] = useState(false);
   const toggleNav = () => {
-    navDisplay ? setNavDisplay(false) : setNavDisplay(true);
+    setNavDisplay((prevNavDisplay) => !prevNavDisplay);
   };
 
   // Set theme
@@ -26,13 +26,6 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("mode", mode);
-    if (mode === "light") {
-      document.body.style.backgroundImage =
-        "linear-gradient(to left, lightskyblue, dodgerblue)";
-    } else {
-      document.body.style.backgroundImage =
-        "linear-gradient(250deg, darkslateblue , midnightblue, indigo )";
-    }
   }, [mode]);
 
   const toggleMode = () => {
@@ -42,20 +35,23 @@ function App() {
       setMode("light");
     }
   };
-
   // Destructuring
   const UIProps = {
     mode: mode,
     navDisplay: navDisplay,
   };
 
+  // CSS class for the root element
+  const rootClass = mode === "light" ? "light-theme" : "dark-theme";
+
   return (
-    <>
+    <div className={rootClass}>
       <Routes>
         <Route
           path="/"
           element={
             <>
+              <CloudAnimation />
               <Navbar
                 {...UIProps}
                 toggleMode={toggleMode}
@@ -125,7 +121,7 @@ function App() {
         />
         <Route path="/cv" element={<CV {...UIProps} />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
