@@ -9,7 +9,7 @@ function Navbar(props) {
           props.mode == "light"
             ? "from-blue-500 to-cyan-100"
             : "from-blue-900 to-violet-900 "
-        } min-h-full lg:min-h-0 lg:h-2/3 lg:flex lg:items-center overflow-hidden duration-700 z-10 ${
+        } min-h-full lg:min-h-0 lg:max-h-2/3 lg:flex lg:items-center overflow-hidden duration-700 z-10 ${
           props.navDisplay ? "" : "-translate-x-full lg:translate-x-0"
         }`}
       >
