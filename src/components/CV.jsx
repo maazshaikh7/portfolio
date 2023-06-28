@@ -8,6 +8,7 @@ function CV() {
         <Link
           to="/"
           className="bx bx-arrow-back bg-neutral-100 rounded-full p-1 mb-2"
+          font-display="swap"
         ></Link>
         <br />
         <p className="hidden sm:block text-neutral-300">Home</p>
@@ -17,6 +18,7 @@ function CV() {
           href="\assets\maaz-cv.pdf"
           download="maaz-cv"
           className="bx bx-download bg-neutral-100 rounded-full p-1 mb-2"
+          font-display="swap"
         ></a>
         <br />
         <p className="hidden sm:block text-neutral-300"> Download CV</p>
@@ -69,7 +71,6 @@ function CV() {
                 <div className="text-xs underline pb-2">
                   <p className="inline">2022-2025 </p>
                   <p className="inline-block group-hover:text-red-500">
-                    {" "}
                     &#91; Pursuing &#93;
                   </p>
                 </div>
@@ -89,7 +90,7 @@ function CV() {
               <li> Hindi - Native</li>
             </ul>
           </div>
-          <div className="interests my-10 ">
+          {/* <div className="interests my-10 ">
             <h2 className="text-xl font-semibold hover:tracking-wider duration-300 mb-12">
               INTERESTS
             </h2>
@@ -111,7 +112,7 @@ function CV() {
                 <p>READING</p>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
         <div className="right relative bg-neutral-100 p-10 xl:col-span-2">
           <div className="about my-10">
@@ -147,13 +148,6 @@ function CV() {
               Create and optimize UI/UX designs to increase overall aesthetic
               appearance and improve conversion rates
             </p>
-
-            <Link
-              to="/contact"
-              className="block text-blue-500 text-lg hover:underline hover:font-semibold"
-            >
-              Add work +
-            </Link>
           </div>
           <div className="projects my-10 pb-7 pt-5 space-y-5">
             <h2 className="text-2xl font-semibold hover:tracking-wider duration-300 mb-12">

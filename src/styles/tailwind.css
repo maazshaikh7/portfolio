@@ -8,6 +8,12 @@
 body {
   overflow: hidden;
 }
+.text-2xs {
+  font-size: 10px;
+}
+img {
+  aspect-ratio: auto;
+}
 .light-theme {
   background-image: linear-gradient(
     to left,

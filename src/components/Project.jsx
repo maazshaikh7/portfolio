@@ -19,6 +19,8 @@ function Project(props) {
         </div>
         <img
           src={props.img}
+          alt={`${props.projectName} website screenshot`}
+          loading="lazy"
           className="h-56 mx-auto m-5 rounded-xl group-hover:opacity-5 duration-300 object-cover"
         />
         <a href={props.preview} target="_blank">

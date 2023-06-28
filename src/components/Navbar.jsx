@@ -5,11 +5,11 @@ function Navbar(props) {
   return (
     <>
       <nav
-        className={`fixed pt-8 lg:p-0 lg:m-0 w-2/3 md:w-1/2 lg:w-min top-0 lg:top-1/2 lg:-translate-y-1/2 lg:left-0 rounded-r-xl bg-gradient-to-tr ${
+        className={`fixed pt-8 lg:p-0 lg:m-0 w-2/3 duration-1000 md:w-1/2 lg:w-16 top-0 lg:top-1/2 lg:-translate-y-1/2 lg:left-0 rounded-r-xl bg-gradient-to-tr ${
           props.mode == "light"
             ? "from-blue-500 to-cyan-100"
             : "from-blue-900 to-violet-900 "
-        } min-h-full lg:min-h-0 lg:max-h-2/3 lg:flex lg:items-center overflow-hidden duration-700 z-10 ${
+        } min-h-full lg:min-h-0 lg:h-2/3 lg:flex lg:items-center overflow-hidden duration-700 z-10 ${
           props.navDisplay ? "" : "-translate-x-full lg:translate-x-0"
         }`}
       >
@@ -37,40 +37,66 @@ function Navbar(props) {
               props.mode === "light" ? "text-sky-900" : "text-cyan-200"
             } list-none w-18  mt-8 lg:m-4 lg:p-0  flex flex-col  text-center space-y-7`}
           >
-            <li className="navItem">
+            <li className="navItem group">
               <Link to="/" className="navLink">
-                <i className="bx bx-home hidden md:inline"></i>
-                <p className="lg:hidden">Home</p>
+                <i
+                  className="bx bx-home hidden md:inline group-hover:opacity-0"
+                  font-display="swap"
+                ></i>
+                <p className="text-2xs hidden group-hover:block relative -top-5">
+                  Home
+                </p>
               </Link>
             </li>
-            <li className="navItem">
+            <li className="navItem group">
               <Link to="/about" className="navLink">
-                <i className="bx bx-user hidden md:inline"></i>
-                <p className="lg:hidden">About Me</p>
+                <i
+                  className="bx bx-user hidden md:inline group-hover:opacity-0"
+                  font-display="swap"
+                ></i>
+                <p className="text-2xs hidden group-hover:block relative -top-5">
+                  About
+                </p>
               </Link>
             </li>
-            <li className="navItem">
+            <li className="navItem group">
               <Link to="/portfolio" className="navLink">
-                <i className="bx bx-briefcase hidden md:inline"></i>
-                <p className="lg:hidden">Portfolio</p>
+                <i
+                  className="bx bx-briefcase hidden md:inline group-hover:opacity-0"
+                  font-display="swap"
+                ></i>
+                <p className="text-2xs hidden group-hover:block relative -top-5">
+                  Projects
+                </p>
               </Link>
             </li>
-            <li className="navItem">
+            <li className="navItem group">
               <Link to="/skills" className="navLink">
-                <i className="bx bx-bookmark hidden md:inline"></i>
-                <p className="lg:hidden">Skills</p>
+                <i
+                  className="bx bx-bookmark hidden md:inline group-hover:opacity-0"
+                  font-display="swap"
+                ></i>
+                <p className="text-2xs hidden group-hover:block relative -top-5">
+                  Skills
+                </p>
               </Link>
             </li>
-            <li className="navItem">
+            <li className="navItem group">
               <Link to="/contact" className="navLink">
-                <i className="bx bxs-chat hidden md:inline"></i>
-                <p className="lg:hidden">Contact Me</p>
+                <i
+                  className="bx bxs-chat hidden md:inline group-hover:opacity-0"
+                  font-display="swap"
+                ></i>
+                <p className="text-2xs hidden group-hover:block relative -top-5">
+                  Contact
+                </p>
               </Link>
             </li>
             <ul className="socials flex justify-center lg:text-left lg:flex-col p-7 lg:p-0 lg:pt-10">
               <li>
                 <a
                   className="bx bxl-facebook cursor-pointer hover:text-3xl"
+                  font-display="swap"
                   href="https://www.facebook.com/profile.php?id=100071131632511"
                   target="_blank"
                 ></a>
@@ -78,6 +104,7 @@ function Navbar(props) {
               <li>
                 <a
                   className="bx bxl-github cursor-pointer hover:text-3xl"
+                  font-display="swap"
                   href="https://github.com/maazshaikh7"
                   target="_blank"
                 ></a>
@@ -85,6 +112,7 @@ function Navbar(props) {
               <li>
                 <a
                   className="bx bxl-linkedin cursor-pointer hover:text-3xl"
+                  font-display="swap"
                   href="https://www.linkedin.com/in/maazshaikh7"
                   target="_blank"
                 ></a>
@@ -96,6 +124,7 @@ function Navbar(props) {
       <div className="close lg:hidden fixed top-5 left-5 inline-flex cursor-pointer mb-16 font-bold z-10 ">
         <i
           onClick={props.toggleNav}
+          font-display="swap"
           className={`bx ${
             props.mode === "dark" ? "text-white" : ""
           } text-3xl duration-700 ${props.navDisplay ? "bx-x" : "bx-menu"}`}
@@ -104,13 +133,15 @@ function Navbar(props) {
 
       <button
         onClick={props.toggleMode}
+        role="presentation"
         className="mode fixed left-1/2 top-5 z-10"
       >
         <i
+          font-display="swap"
           className={`bx bxs-${
             props.mode == "light" ? "moon" : "sun text-white"
           }`}
-        ></i>{" "}
+        ></i>
       </button>
       <Link
         to="/cv"
@@ -118,7 +149,7 @@ function Navbar(props) {
           props.mode === "dark" ? "text-white" : ""
         }`}
       >
-        <i className="bx text-3xl bxs-notepad p-0"></i>
+        <i className="bx text-3xl bxs-notepad p-0" font-display="swap"></i>
         <p className="font-bold text-sm text-center">CV</p>
       </Link>
     </>
