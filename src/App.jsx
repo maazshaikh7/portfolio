@@ -102,7 +102,7 @@ function App() {
                 toggleMode={toggleMode}
                 toggleNav={toggleNav}
               />{" "}
-              <Skills mode={mode} navDisplay={navDisplay} />
+              <Skills {...UIProps} />
             </>
           }
         />

@@ -39,7 +39,7 @@ function Contact(props) {
   };
 
   return (
-    <>
+    <section className="contact min-h-screen ">
       {alert && (
         <div
           className={`${
@@ -49,10 +49,10 @@ function Contact(props) {
           <p>{alert.msg}</p>
         </div>
       )}
-      <section
-        className={`contact w-auto lg:w-2/3 h-fit ${
+      <div
+        className={`py-10 w-auto lg:w-2/3 ${
           props.mode === "dark" ? "text-neutral-300" : "text-neutral-900"
-        } mx-auto rounded-xl m-10 mt-32 duration-700 min-h-screen`}
+        } mx-auto rounded-lg pt-32 `}
       >
         <h1 className="text-4xl font-bold text-center">Contact me</h1>
         <form
@@ -70,6 +70,7 @@ function Contact(props) {
               name="firstName"
               id="firstName"
               placeholder="First name"
+              autoComplete="true"
               className="my-2 p-2 rounded-xl w-full bg-neutral-200 active:bg-neutral-600 text-black"
               {...register("firstName", { required: true, maxLength: 10 })}
             />
@@ -88,6 +89,7 @@ function Contact(props) {
               name="lastName"
               placeholder="Last name"
               id="lastName"
+              autoComplete="true"
               className="my-2  p-2 rounded-xl w-full bg-neutral-200 active:bg-neutral-600 text-black"
               {...register("lastName", { required: true, maxLength: 10 })}
             />
@@ -103,6 +105,7 @@ function Contact(props) {
             </label>
             <input
               type="email"
+              autoComplete="true"
               placeholder="Enter your email"
               name="email"
               id="email"
@@ -135,8 +138,8 @@ function Contact(props) {
             className="p-2 rounded-2xl w-full bg-neutral-900 col-span-2 mt-10 text-neutral-100 hover:bg-green-700 active:bg-green-400"
           />
         </form>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
