@@ -23,9 +23,9 @@ function Home(props) {
           >
             <p className="text-xl my-1 ">Hi, I'm,</p>
             <h1 className="text-5xl font-sans my-1">Maaz Shaikh</h1>
-            <h3 className="text-2xl my-1 ">
+            <h2 className="text-2xl my-1 ">
               Frontend Developer | UI/UX Designer
-            </h3>
+            </h2>
             <Link to="/contact">
               <button
                 className={`p-3 text-md mt-5 rounded-full border-2 border-neutral-800 hover:border-2 hover:border-sky-300 font-semibold`}
