@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function CV() {
   return (
-    <div className="font-serif bg-gray-500 min-h-screen flex justify-center items-center">
+    <aside className="font-serif bg-gray-500 min-h-screen flex justify-center items-center">
       <div className="absolute top-10 left-10 z-10 text-center">
         <Link
           to="/"
@@ -256,7 +256,7 @@ function CV() {
           </div>
         </div>
       </div>
-    </div>
+    </aside>
   );
 }
 

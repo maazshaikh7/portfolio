@@ -49,17 +49,17 @@ function Contact(props) {
           <p>{alert.msg}</p>
         </div>
       )}
-      <div
+      <section
         className={`contact w-auto lg:w-2/3 h-fit ${
           props.mode === "dark" ? "text-neutral-300" : "text-neutral-900"
         } mx-auto rounded-xl m-10 mt-32 duration-700 min-h-screen`}
       >
-        <h1 className="text-5xl font-bold text-center">Contact me</h1>
+        <h1 className="text-4xl font-bold text-center">Contact me</h1>
         <form
           onSubmit={handleSubmit(onSubmit)}
           ref={form}
           action="post"
-          className="w-3/4 text-lg font-semibold mx-auto mt-20 mb-10 grid gap-5 grid-cols-2"
+          className="w-3/4 font-semibold mx-auto mt-20 mb-10 grid gap-2 grid-cols-2"
         >
           <div className="col-span-2 md:col-span-1">
             <label htmlFor="firstName">
@@ -70,7 +70,7 @@ function Contact(props) {
               name="firstName"
               id="firstName"
               placeholder="First name"
-              className="my-3 p-2 rounded-2xl w-full bg-neutral-200 active:bg-neutral-600 text-black"
+              className="my-2 p-2 rounded-xl w-full bg-neutral-200 active:bg-neutral-600 text-black"
               {...register("firstName", { required: true, maxLength: 10 })}
             />
             {errors.firstName && (
@@ -88,7 +88,7 @@ function Contact(props) {
               name="lastName"
               placeholder="Last name"
               id="lastName"
-              className="my-3  p-2 rounded-2xl w-full bg-neutral-200 active:bg-neutral-600 text-black"
+              className="my-2  p-2 rounded-xl w-full bg-neutral-200 active:bg-neutral-600 text-black"
               {...register("lastName", { required: true, maxLength: 10 })}
             />
             {errors.lastName && (
@@ -106,7 +106,7 @@ function Contact(props) {
               placeholder="Enter your email"
               name="email"
               id="email"
-              className="my-3  p-2 rounded-2xl w-full bg-neutral-200 active:bg-neutral-600 text-black"
+              className="my-2  p-2 rounded-xl w-full bg-neutral-200 active:bg-neutral-600 text-black"
               {...register("email", {
                 required: true,
                 pattern:
@@ -125,7 +125,7 @@ function Contact(props) {
               name="message"
               placeholder="Write me a message..."
               id="message"
-              className="my-3 p-2 rounded-2xl w-full max-h-fit h-40 bg-neutral-200 active:bg-neutral-600 text-black"
+              className="my-2 p-2 rounded-xl w-full max-h-fit h-40 bg-neutral-200 active:bg-neutral-600 text-black"
               {...register("message")}
             />
           </div>
@@ -135,7 +135,7 @@ function Contact(props) {
             className="p-2 rounded-2xl w-full bg-neutral-900 col-span-2 mt-10 text-neutral-100 hover:bg-green-700 active:bg-green-400"
           />
         </form>
-      </div>
+      </section>
     </>
   );
 }

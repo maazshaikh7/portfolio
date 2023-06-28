@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import CV from "./components/CV";
+import Footer from "./components/Footer";
 
 function App() {
   //TODO Parallax effect
@@ -65,6 +66,7 @@ function App() {
               <Portfolio {...UIProps} />
               <Skills {...UIProps} />
               <Contact {...UIProps} />
+              <Footer />
             </>
           }
         />

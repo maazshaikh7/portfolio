@@ -2,9 +2,9 @@ import React from "react";
 
 function About(props) {
   return (
-    <div
+    <section
       className={`flex items-center ${
-        props.style === "fixed" ? "h-screen" : "max-h-screen my-72"
+        props.style === "fixed" ? "h-screen" : "max-h-screen my-60"
       }`}
     >
       <div
@@ -16,13 +16,18 @@ function About(props) {
       >
         <div className="text-center lg:text-left m-10 p-5  md:pl-20">
           <h1 className="font-bold text-5xl pb-12 -z-10">About me</h1>
-          <p className="text-lg -z-10">
-            I am a self taught frontend engineer based in Mumbai, India. Over
-            the past year, I have worked on personal and corporate projects
-            using CSS frameworks, react and my photoshop skills. I am always
-            eager to learn new skills and up for challenges!! I can bring
-            innovative ideas to web development and contribute to building a
-            strong team bond and a healthy working envoirnment.
+          <p className="text-lg -z-10 py-6">
+            I am Maaz Shaikh, a self-taught frontend engineer from Mumbai,
+            India. With a strong passion for web development, I have gained
+            experience in personal and corporate projects. I am dedicated to
+            continuous learning and enjoy taking on challenges.
+          </p>
+          <p className="text-lg -z-10 py-6">
+            Overall, I am a driven and enthusiastic frontend developer, eager to
+            contribute to a team and create a positive working environment. I
+            believe in continuous growth and learning in the ever-evolving field
+            of web development, and I am excited to take on new challenges and
+            make meaningful contributions to projects.
           </p>
         </div>
       </div>
@@ -33,7 +38,7 @@ function About(props) {
       >
         <img src="\assets\airballoon.webp" alt="Hot air balloon" />
       </div>
-    </div>
+    </section>
   );
 }
 

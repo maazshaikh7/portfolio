@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function Home(props) {
   return (
+    //TODO Cloud revealing animation till assets load
     <>
       <main
         className={`duration-[2500ms] md:animate-float -z-10 grid place-items-center h-screen ${
@@ -38,14 +39,14 @@ function Home(props) {
       <img
         src="\assets\sun.png"
         alt="sun"
-        className={`sun hidden md:block w-72 absolute top-3 right-2 duration-1000 ${
+        className={`sun hidden md:block w-64 absolute top-3 right-2 duration-1000 ${
           props.mode === "dark" ? "-translate-y-72 animate-fade-out" : ""
         }`}
       />
       <img
         src="\assets\moon.png"
         alt="moon"
-        className={`moon hidden md:block w-40 absolute top-3 right-2 duration-1000 ${
+        className={`moon hidden md:block w-36 absolute top-3 right-2 duration-1000 ${
           props.mode === "light" ? "-translate-y-80 animate-fade-out" : ""
         }`}
       />

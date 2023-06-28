@@ -3,7 +3,7 @@ import Project from "./Project";
 
 function Portfolio(props) {
   return (
-    <div
+    <section
       className={`${
         props.mode === "dark" ? "text-cyan-100" : "text-neutral-900"
       } py-12 my-auto`}
@@ -81,7 +81,7 @@ function Portfolio(props) {
           }
         />
       </div>
-    </div>
+    </section>
   );
 }
 
