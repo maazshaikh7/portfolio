@@ -40,10 +40,10 @@ function Navbar(props) {
             <li className="navItem group">
               <Link to="/" aria-label="Home page link" className="navLink">
                 <i
-                  className="bx bx-home hidden md:inline group-hover:opacity-0"
+                  className="bx bx-home hidden md:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
-                <p className="text-2xs hidden group-hover:block relative -top-5">
+                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative -top-5">
                   Home
                 </p>
               </Link>
@@ -55,10 +55,10 @@ function Navbar(props) {
                 className="navLink"
               >
                 <i
-                  className="bx bx-user hidden md:inline group-hover:opacity-0"
+                  className="bx bx-user hidden md:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
-                <p className="text-2xs hidden group-hover:block relative -top-5">
+                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative -top-5">
                   About
                 </p>
               </Link>
@@ -70,10 +70,10 @@ function Navbar(props) {
                 className="navLink"
               >
                 <i
-                  className="bx bx-briefcase hidden md:inline group-hover:opacity-0"
+                  className="bx bx-briefcase hidden md:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
-                <p className="text-2xs hidden group-hover:block relative -top-5">
+                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative -top-5">
                   Projects
                 </p>
               </Link>
@@ -85,10 +85,10 @@ function Navbar(props) {
                 className="navLink"
               >
                 <i
-                  className="bx bx-bookmark hidden md:inline group-hover:opacity-0"
+                  className="bx bx-bookmark hidden md:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
-                <p className="text-2xs hidden group-hover:block relative -top-5">
+                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative -top-5">
                   Skills
                 </p>
               </Link>
@@ -100,10 +100,10 @@ function Navbar(props) {
                 className="navLink"
               >
                 <i
-                  className="bx bxs-chat hidden md:inline group-hover:opacity-0"
+                  className="bx bxs-chat hidden md:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
-                <p className="text-2xs hidden group-hover:block relative -top-5">
+                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative -top-5">
                   Contact
                 </p>
               </Link>
