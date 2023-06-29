@@ -120,12 +120,16 @@ function CV() {
               PROFILE
             </h2>
             <p>
-              I am a self taught frontend engineer based in Mumbai, India. Over
-              the past year, I have worked on personal and corporate projects
-              using CSS frameworks, react and my photoshop skills. I am always
-              eager to learn new skills and up for challenges!! I can bring
-              innovative ideas to web development and contribute to building a
-              strong team bond and a healthy working envoirnment.
+              I am a highly skilled and dedicated Frontend Developer residing in
+              Mumbai, India. With expertise in creating visually appealing and
+              user-friendly web applications, I excel in utilizing HTML, CSS,
+              and JavaScript and React. <br />
+              <br />
+              Committed to staying updated with the latest industry trends and
+              best practices, I strive to deliver high-quality results. I thrive
+              in collaborative environments, working seamlessly with
+              cross-functional teams and possessing excellent communication
+              skills.
             </p>
           </div>
           <div className="work my-10 pt-5 space-y-5">
@@ -162,8 +166,8 @@ function CV() {
                   Personal Portfolio
                 </a>
                 <p>
-                  Created and updated a personal portfolio over months of
-                  learning development using react-js and tailwind-css. <br />
+                  Created and updated a personal portfolio using React and
+                  tailwind-css and Vite. <br />
                 </p>
               </li>
               <li>
@@ -180,18 +184,6 @@ function CV() {
               </li>
               <li>
                 <a
-                  href="https://textutils-maazshaikh7.netlify.app"
-                  className="hover:text-blue-600 underline text-xl mb-3 block"
-                >
-                  TextUtils
-                </a>
-                <p>
-                  TextUtils is a simple utility tool for text editing made using
-                  react and bootstrap. <br />
-                </p>
-              </li>
-              <li>
-                <a
                   href="https://maazshaikh7.github.io/Etch-A-Sketch/"
                   className="hover:text-blue-600 underline text-xl mb-3 block"
                 >
@@ -201,18 +193,6 @@ function CV() {
                   A sketchpad on the web, with rgb sketching made using pure
                   HTML, CSS and Javascript. This was a practice project in 'The
                   Odin Project' <br />
-                </p>
-              </li>
-              <li>
-                <a
-                  href="https://maazshaikh7.github.io/ToDoList/"
-                  className="hover:text-blue-600 underline text-xl mb-3 block"
-                >
-                  TODO-List
-                </a>
-                <p>
-                  As the name suggests, a list of things to do, stored in
-                  local-storage made using pure HTML, CSS and Javascript. <br />
                 </p>
               </li>
               <li>

@@ -112,6 +112,7 @@ function Navbar(props) {
               <li>
                 <a
                   className="bx bxl-facebook cursor-pointer hover:text-3xl"
+                  aria-label="Facebook link"
                   font-display="swap"
                   href="https://www.facebook.com/profile.php?id=100071131632511"
                   target="_blank"
@@ -120,6 +121,7 @@ function Navbar(props) {
               <li>
                 <a
                   className="bx bxl-github cursor-pointer hover:text-3xl"
+                  aria-label="Github link"
                   font-display="swap"
                   href="https://github.com/maazshaikh7"
                   target="_blank"
@@ -128,6 +130,7 @@ function Navbar(props) {
               <li>
                 <a
                   className="bx bxl-linkedin cursor-pointer hover:text-3xl"
+                  aria-label="LinkedIn link"
                   font-display="swap"
                   href="https://www.linkedin.com/in/maazshaikh7"
                   target="_blank"
