@@ -19,7 +19,7 @@ function Home(props) {
           <div
             className={`${
               props.mode === "dark" ? "text-cyan-100" : "text-neutral-900"
-            } `}
+            } px-5`}
           >
             <p className="text-xl my-1 ">Hi, I'm,</p>
             <h1 className="text-5xl font-sans my-1">Maaz Shaikh</h1>

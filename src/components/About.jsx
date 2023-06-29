@@ -3,8 +3,8 @@ import React from "react";
 function About(props) {
   return (
     <section
-      className={`flex items-center ${
-        props.style === "fixed" ? "h-screen" : "max-h-screen my-60"
+      className={`flex items-center min-h-screen ${
+        props.style === "fixed" ? "" : "my-20"
       }`}
     >
       <div
@@ -14,8 +14,10 @@ function About(props) {
           props.navDisplay === true ? "-translate-x-2/3 " : ""
         }`}
       >
-        <div className="text-center lg:text-left m-10 p-5  md:pl-20">
-          <h1 className="font-bold text-5xl pb-12 -z-10">About me</h1>
+        <div className="m-10 p-5  md:pl-20">
+          <h1 className="font-bold text-center md:text-left text-5xl pb-12 -z-10">
+            About me
+          </h1>
           <p className="text-lg -z-10 py-6">
             I am Maaz Shaikh, a self-taught frontend engineer from Mumbai,
             India. With a strong passion for web development, I have gained

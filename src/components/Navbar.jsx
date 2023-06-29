@@ -43,7 +43,7 @@ function Navbar(props) {
                   className="bx bx-home hidden md:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
-                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative -top-5">
+                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative bottom-5 -left-1">
                   Home
                 </p>
               </Link>
@@ -58,7 +58,7 @@ function Navbar(props) {
                   className="bx bx-user hidden md:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
-                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative -top-5">
+                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative bottom-5 -left-1">
                   About
                 </p>
               </Link>
@@ -73,7 +73,7 @@ function Navbar(props) {
                   className="bx bx-briefcase hidden md:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
-                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative -top-5">
+                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative bottom-5 -left-3">
                   Projects
                 </p>
               </Link>
@@ -88,7 +88,7 @@ function Navbar(props) {
                   className="bx bx-bookmark hidden md:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
-                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative -top-5">
+                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative bottom-5 -left-1">
                   Skills
                 </p>
               </Link>
@@ -103,7 +103,7 @@ function Navbar(props) {
                   className="bx bxs-chat hidden md:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
-                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative -top-5">
+                <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative bottom-5 -left-3">
                   Contact
                 </p>
               </Link>

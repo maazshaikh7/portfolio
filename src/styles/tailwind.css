@@ -31,9 +31,7 @@ img {
     indigo
   );
 }
-.navLink {
-  @apply hover:text-black duration-200;
-}
+
 .bx {
   @apply text-2xl pr-2 lg:p-0 translate-y-1 hover:opacity-75 duration-100;
 }
