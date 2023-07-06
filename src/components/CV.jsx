@@ -26,10 +26,10 @@ function CV() {
       <div className="container relative w-full max-w-5xl min-h-[1000px] m-5 xl:m-16 bg-white grid grid-cols-1 xl:grid-cols-3 shadow-2xl">
         <div className="left relative bg-neutral-800 p-10 text-neutral-100">
           <div className="profileText relative flex flex-col items-center space-y-10 pb-8 border-b-2 border-neutral-500">
-            <div className="imgBx relative w-48 h-48 rounded-full overflow-hidden hover:border-8 duration-300 border-neutral-300">
+            {/* <div className="imgBx relative w-48 h-48 rounded-full overflow-hidden hover:border-8 duration-300 border-neutral-300">
               <img src="\assets\avatar.webp" alt="Profile picture" />
-            </div>
-            <h2 className="text-3xl text-center font-semibold hover:tracking-wider duration-500">
+            </div> */}
+            <h2 className="text-3xl text-center my-10 font-semibold hover:tracking-wider duration-500">
               Maaz Shaikh
               <br />
               <span className="text-lg font-extralight ">Web developer</span>
@@ -218,14 +218,14 @@ function CV() {
               <li>CSS 3</li>
               <li>JAVASCRIPT</li>
               <li>TYPESCRIPT</li>
-              <li>REACT JS</li>
+              <li>REACT</li>
+              <li>NEXT.JS</li>
               <li>TAILWIND CSS</li>
               <li>BOOTSTRAP</li>
               <li>NODEJS</li>
               <li>GIT</li>
               <li>GITHUB</li>
               <li>JEST</li>
-              <li>RESPONSIVE DESIGN</li>
             </ul>
           </div>
         </div>
