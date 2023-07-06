@@ -122,8 +122,8 @@ function CV() {
             <p>
               I am a highly skilled and dedicated Frontend Developer residing in
               Mumbai, India. With expertise in creating visually appealing and
-              user-friendly web applications, I excel in utilizing HTML, CSS,
-              and JavaScript and React. <br />
+              user-friendly web applications, I excel in utilizing HTML, CSS ,
+              JavaScript and React. <br />
               <br />
               Committed to staying updated with the latest industry trends and
               best practices, I strive to deliver high-quality results. I thrive
