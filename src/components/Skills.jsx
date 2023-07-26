@@ -38,6 +38,15 @@ function Skills(props) {
           </li>
           <li className="text-center w-16">
             <img
+              src="/assets/nextjs.png"
+              alt="Next logo"
+              loading="lazy"
+              className="invert"
+            />
+            <p>NextJS</p>
+          </li>
+          <li className="text-center w-16">
+            <img
               src="\assets\bootstrap.png"
               alt="Bootstrap logo"
               loading="lazy"
@@ -55,10 +64,6 @@ function Skills(props) {
           <li className="text-center w-16">
             <img src="\assets\git.png" alt="Git logo" loading="lazy" />
             <p>Git</p>
-          </li>
-          <li className="text-center w-16">
-            <img src="/assets/jest.svg" alt="Jest logo" loading="lazy" />
-            <p>Jest</p>
           </li>
           <li className="text-center w-16">
             <img src="\assets\sass.png" alt="Sass logo" loading="lazy" />

@@ -160,6 +160,19 @@ function CV() {
             <ul className="grid gap-5 grid-cols-1 md:grid-cols-2">
               <li>
                 <a
+                  href=""
+                  className="hover:text-blue-600 underline text-xl mb-3 block"
+                >
+                  Codeswear - Ecommerce
+                </a>
+                <p>
+                  Codeswear is a Next.js-based eCommerce website that offers a
+                  diverse range of trendy and fashionable clothing and
+                  accessories <br />
+                </p>
+              </li>
+              <li>
+                <a
                   href="https://maazshaikh.netlify.app/"
                   className="hover:text-blue-600 underline text-xl mb-3 block"
                 >
@@ -180,19 +193,6 @@ function CV() {
                 <p>
                   Made using react and typescript for practicing touch typing
                   and increasing typing speed. <br />
-                </p>
-              </li>
-              <li>
-                <a
-                  href="https://maazshaikh7.github.io/Etch-A-Sketch/"
-                  className="hover:text-blue-600 underline text-xl mb-3 block"
-                >
-                  Etch-A-sketch
-                </a>
-                <p>
-                  A sketchpad on the web, with rgb sketching made using pure
-                  HTML, CSS and Javascript. This was a practice project in 'The
-                  Odin Project' <br />
                 </p>
               </li>
               <li>

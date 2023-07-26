@@ -21,13 +21,13 @@ function Portfolio(props) {
           }
         />
         <Project
-          projectName={"TODO-LIST"}
+          projectName={"CODESWEAR"}
           mode={props.mode}
-          img={"\\assets\\todolist.png"}
-          preview={"https://maazshaikh7.github.io/ToDoList/"}
-          code={"https://github.com/maazshaikh7/todolist"}
+          img={"\\assets\\codeswear.png"}
+          preview={""}
+          code={"https://github.com/maazshaikh7/codeswear"}
           about={
-            "As the name suggests, a list of things to do, stored in local-storage made using pure HTML, CSS and Javascript."
+            "Codeswear is a Next.js-based Fullstack eCommerce website that offers a diverse range of trendy and fashionable clothing and accessories"
           }
         />
         <Project
@@ -40,16 +40,6 @@ function Portfolio(props) {
             "A sketchpad on web with rgb sketching made using pure HTML, CSS and Javscript"
           }
         />
-        {/* <Project
-          projectName={"ODIN-CALCULATOR"}
-          mode={props.mode}
-          img={"\\assets\\odin-calculator.png"}
-          preview={"https://odin-calculator-maazshaikh7.netlify.app"}
-          code={"https://github.com/maazshaikh7/odin-calculator"}
-          about={
-            "'The odin project' basic calculator remade using tailwind-css and javascript"
-          }
-        /> */}
         <Project
           projectName={"MICROSOFT CLONE"}
           mode={props.mode}
