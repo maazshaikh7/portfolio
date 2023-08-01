@@ -160,7 +160,7 @@ function CV() {
             <ul className="grid gap-5 grid-cols-1 md:grid-cols-2">
               <li>
                 <a
-                  href=""
+                  href="https://codeswear-ecommerce.vercel.app"
                   className="hover:text-blue-600 underline text-xl mb-3 block"
                 >
                   Codeswear - Ecommerce

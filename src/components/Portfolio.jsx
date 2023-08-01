@@ -24,7 +24,7 @@ function Portfolio(props) {
           projectName={"CODESWEAR"}
           mode={props.mode}
           img={"\\assets\\codeswear.png"}
-          preview={""}
+          preview={"https://codeswear-ecommerce.vercel.app"}
           code={"https://github.com/maazshaikh7/codeswear"}
           about={
             "Codeswear is a Next.js-based Fullstack eCommerce website that offers a diverse range of trendy and fashionable clothing and accessories"
