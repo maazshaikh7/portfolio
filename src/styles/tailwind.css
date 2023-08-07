@@ -54,3 +54,6 @@ ul li.w-16 p {
   text-align: center;
   padding: 4px 2px;
 }
+.navItem {
+  padding: 0.9rem 0;
+}

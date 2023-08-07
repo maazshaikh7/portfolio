@@ -35,12 +35,12 @@ function Navbar(props) {
           <ul
             className={`navlist font-bold text-sm ${
               props.mode === "light" ? "text-sky-900" : "text-cyan-200"
-            } list-none w-18  mt-8 lg:m-4 lg:p-0  flex flex-col  text-center space-y-7`}
+            } list-none w-18  mt-8 lg:m-4 lg:p-0  flex flex-col  text-center`}
           >
             <li className="navItem group">
               <Link to="/" aria-label="Home page link" className="navLink">
                 <i
-                  className="bx bx-home hidden md:inline lg:group-hover:opacity-0"
+                  className="bx bx-home hidden lg:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
                 <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative bottom-5 -left-1">
@@ -55,7 +55,7 @@ function Navbar(props) {
                 className="navLink"
               >
                 <i
-                  className="bx bx-user hidden md:inline lg:group-hover:opacity-0"
+                  className="bx bx-user hidden lg:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
                 <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative bottom-5 -left-1">
@@ -70,7 +70,7 @@ function Navbar(props) {
                 className="navLink"
               >
                 <i
-                  className="bx bx-briefcase hidden md:inline lg:group-hover:opacity-0"
+                  className="bx bx-briefcase hidden lg:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
                 <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative bottom-5 -left-3">
@@ -85,7 +85,7 @@ function Navbar(props) {
                 className="navLink"
               >
                 <i
-                  className="bx bx-bookmark hidden md:inline lg:group-hover:opacity-0"
+                  className="bx bx-bookmark hidden lg:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
                 <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative bottom-5 -left-1">
@@ -100,7 +100,7 @@ function Navbar(props) {
                 className="navLink"
               >
                 <i
-                  className="bx bxs-chat hidden md:inline lg:group-hover:opacity-0"
+                  className="bx bxs-chat hidden lg:inline lg:group-hover:opacity-0"
                   font-display="swap"
                 ></i>
                 <p className="text-sm lg:text-2xs lg:hidden group-hover:block relative bottom-5 -left-3">
