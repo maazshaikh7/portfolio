@@ -166,7 +166,7 @@ function Navbar(props) {
       <Link
         to="/cv"
         aria-label="Link to CV"
-        className={`resume z-20 fixed right-6 top-4 sm:float-right sm:top-[90vh] sm:right-10 ${
+        className={`resume z-20 fixed right-6 top-4 md:float-right md:top-[90vh] md:right-10 ${
           props.mode === "dark" ? "text-white" : ""
         }`}
       >
