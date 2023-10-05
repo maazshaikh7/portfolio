@@ -22,8 +22,18 @@ function Home(props) {
             } px-5`}
           >
             <p className="text-xl my-1 ">Hi, I'm,</p>
-            <h1 className="text-5xl font-sans my-1">Maaz Shaikh</h1>
-            <h2 className="text-2xl my-1 ">
+            <h1
+              className={`text-5xl font-sans my-1  ${
+                props.mode == "dark" ? "text-shadow-xl" : ""
+              }`}
+            >
+              Maaz Shaikh
+            </h1>
+            <h2
+              className={`text-2xl my-1${
+                props.mode == "dark" ? "text-shadow" : ""
+              }`}
+            >
               Frontend Developer | UI/UX Designer
             </h2>
             <Link to="/contact">
@@ -37,6 +47,7 @@ function Home(props) {
         </div>
       </main>
       <img
+        onClick={props.toggleMode}
         src="\assets\sun.png"
         alt="sun"
         className={`sun hidden md:block w-64 absolute top-3 right-2 duration-1000 ${
@@ -44,6 +55,7 @@ function Home(props) {
         }`}
       />
       <img
+        onClick={props.toggleMode}
         src="\assets\moon.png"
         alt="moon"
         className={`moon hidden md:block w-36 absolute top-3 right-2 duration-1000 ${

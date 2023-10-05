@@ -12,17 +12,26 @@ import CloudAnimation from "./components/CloudAnimation";
 
 function App() {
   //TODO Parallax effect
-  // On hamburger menu toggle
+  const [loading, setLoading] = useState(true);
   const [navDisplay, setNavDisplay] = useState(false);
-  const toggleNav = () => {
-    setNavDisplay((prevNavDisplay) => !prevNavDisplay);
-  };
 
   // Set theme
   const [mode, setMode] = useState(() => {
     const savedMode = localStorage.getItem("mode");
     return savedMode || "light";
   });
+
+  // On hamburger menu toggle
+  const toggleNav = () => {
+    setNavDisplay((prevNavDisplay) => !prevNavDisplay);
+  };
+
+  useEffect(() => {
+    const loadingTimer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    return () => clearTimeout(loadingTimer);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem("mode", mode);
@@ -51,13 +60,17 @@ function App() {
           path="/"
           element={
             <>
-              <CloudAnimation />
+              {loading ? (
+                <CloudAnimation />
+              ) : (
+                <div className="hidden"></div> // Hide the cloud animation when not loading
+              )}
               <Navbar
                 {...UIProps}
                 toggleMode={toggleMode}
                 toggleNav={toggleNav}
               />
-              <Home {...UIProps} />
+              <Home {...UIProps} toggleMode={toggleMode} />
               <About {...UIProps} />
               <Portfolio {...UIProps} />
               <Skills {...UIProps} />

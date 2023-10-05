@@ -5,7 +5,7 @@ function Navbar(props) {
   return (
     <>
       <nav
-        className={`fixed shadow-sm pt-8 lg:p-0 lg:m-0 w-2/3 duration-1000 md:w-1/2 lg:w-16 top-0 lg:top-1/2 lg:-translate-y-1/2 lg:left-0 rounded-r-xl bg-gradient-to-tr ${
+        className={`fixed shadow-sm pt-8 lg:p-0 lg:m-0 w-2/3 duration-1000 md:w-1/2 lg:w-16 top-0 lg:top-1/2 lg:-translate-y-1/2 lg:left-0 rounded-r-xl border-cyan-800 border border-l-0 bg-gradient-to-tr ${
           props.mode == "light"
             ? "from-blue-500 to-cyan-100"
             : "from-blue-900 to-violet-900 "

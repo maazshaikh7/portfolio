@@ -24,12 +24,7 @@ img {
 }
 
 .dark-theme {
-  background-image: linear-gradient(
-    250deg,
-    darkslateblue,
-    midnightblue,
-    indigo
-  );
+  background-image: radial-gradient(darkslateblue, rgb(67, 56, 202));
 }
 
 .bx {
@@ -56,4 +51,25 @@ ul li.w-16 p {
 }
 .navItem {
   padding: 0.9rem 0;
+}
+@keyframes cloudAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-cloud {
+  animation: cloudAnimation 1s linear infinite alternate;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgb(4, 21, 68);
+  transform: translateZ(0);
+}
+.text-shadow-xl {
+  text-shadow: 4px 4px 8px rgb(4, 21, 68);
+  transform: translateZ(0);
 }
